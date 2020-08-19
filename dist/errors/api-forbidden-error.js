@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ApiForbiddenError = void 0;
+const api_error_1 = require("@/errors/api-error");
+const common_1 = require("@nestjs/common");
+class ApiForbiddenError extends api_error_1.ApiError {
+    constructor(error, message, shouldLogToExternal = true) {
+        super(common_1.HttpStatus.FORBIDDEN, error, message, shouldLogToExternal);
+    }
+}
+exports.ApiForbiddenError = ApiForbiddenError;
+//# sourceMappingURL=api-forbidden-error.js.map
