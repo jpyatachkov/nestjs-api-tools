@@ -1,3 +1,2 @@
-// reflect-metadata используется в декораторах и не подключается при запуске
-// тестов. В связи с этим подключение вынесено принудительно в setup-файл.
+// For correct tests using decorators.
 import 'reflect-metadata';

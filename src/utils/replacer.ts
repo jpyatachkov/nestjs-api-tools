@@ -1,5 +1,5 @@
 /**
- * Removes properties from object
+ * Removes properties from object.
  * @param {Record<string, any>} obj Object to remove properties from.
  * @param {string} keysToExclude Properties to exclude.
  */

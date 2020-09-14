@@ -1,6 +1,6 @@
 /**
- * Makes first letter capital
- * @param {string} str
+ * Makes first letter capital.
+ * @param {string} str.
  */
 export function capitalize(str: string): string {
   if (!str || !str.length) {
@@ -12,8 +12,8 @@ export function capitalize(str: string): string {
 
 /**
  * Joins strings with delimiter passed without delimiter duplication.
- * @param {string} delimiter
- * @param {string[]} values
+ * @param {string} delimiter.
+ * @param {string[]} values.
  */
 export function joinStrings(delimiter: string, ...values: string[]): string {
   return values.map((v) => {
@@ -37,8 +37,8 @@ export function joinStrings(delimiter: string, ...values: string[]): string {
 }
 
 /**
- * Checks whether string is empty
- * @param {string} str
+ * Checks whether string is empty.
+ * @param {string} str.
  */
 export function isEmpty(str: string): boolean {
   return !(str || '').trim();
