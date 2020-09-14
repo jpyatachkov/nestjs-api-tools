@@ -25,8 +25,8 @@ describe('ParseDatePipe', () => {
             const expected = new Date(dateString);
             expect(pipe.transform(dateString)).toEqual(expected);
         });
-        it('should return NaN if string is not date', () => {
-            expect(pipe.transform(faker_1.default.random.word())).toBeNaN();
+        it('should return null if string is not date', () => {
+            expect(pipe.transform(faker_1.default.random.word())).toBeNull();
         });
     });
 });

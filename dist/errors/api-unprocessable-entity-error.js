@@ -4,8 +4,8 @@ exports.ApiUnprocessableEntityError = void 0;
 const api_error_1 = require("@/errors/api-error");
 const common_1 = require("@nestjs/common");
 class ApiUnprocessableEntityError extends api_error_1.ApiError {
-    constructor(error, message, shouldLogToExternal = true) {
-        super(common_1.HttpStatus.UNPROCESSABLE_ENTITY, error, message, shouldLogToExternal);
+    constructor(error, message) {
+        super(error, message, common_1.HttpStatus.UNPROCESSABLE_ENTITY);
     }
 }
 exports.ApiUnprocessableEntityError = ApiUnprocessableEntityError;

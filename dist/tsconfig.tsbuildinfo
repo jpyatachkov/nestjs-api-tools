@@ -1436,79 +1436,9 @@
         "signature": "d1812df0ccec60a2deca1e8f430e037a5c3616ee45d7f4cb92b84ea0e8f85741",
         "affectsGlobalScope": false
       },
-      "../node_modules/@nestjs/core/helpers/execution-context-host.d.ts": {
-        "version": "2a899aef0c6c94cc3537fe93ec8047647e77a3f52ee7cacda95a8c956d3623fb",
-        "signature": "2a899aef0c6c94cc3537fe93ec8047647e77a3f52ee7cacda95a8c956d3623fb",
-        "affectsGlobalScope": false
-      },
-      "../src/decorators/limit.decorator.ts": {
-        "version": "e29e7f6fb4806db5ef80f4de4e069ff5a5b92cea9d6f2a6aa2541e9d240b60e5",
-        "signature": "76456a237264ede2f142fdc245e17669730582d12f6e187a07b65053cbd658b9",
-        "affectsGlobalScope": false
-      },
-      "../src/decorators/offset.decorator.ts": {
-        "version": "67fb63c2e495831c450d82e901f0419fca7059a113860b7ad4c5845611243371",
-        "signature": "1fcc8ab9f852f66b7113e30a117623c2281c58ce367088711a44a4c6782230eb",
-        "affectsGlobalScope": false
-      },
-      "../src/decorators/page.decorator.ts": {
-        "version": "c76c26b2c83116bcf9c8d9d4218d8d3f32c6d9e5bf88ccc7c46a565ef754a218",
-        "signature": "33cdbeb262d3908dea3805a362f1e5dfa05b48175b68fb5e6c5841a13f95862c",
-        "affectsGlobalScope": false
-      },
-      "../src/decorators/serialization.decorator.ts": {
-        "version": "873bef8177402e04719e7aa05184a69bbc53deb5eecf1e980cd4ca6b07a597ad",
-        "signature": "d7f0814a6dcf6e046e578ade137ee85c2e58886659d3805d8f9bfd99cd46abcb",
-        "affectsGlobalScope": false
-      },
-      "../src/decorators/size.decorator.ts": {
-        "version": "3d3f01a10103c2608947aaa2d8e48d931f0e602096cad27c73e197d7235dd7c6",
-        "signature": "d23bce8bfa7f9b330aa2e4161f01798d4ffad2e23ae4b1ae655a1a703c769e43",
-        "affectsGlobalScope": false
-      },
-      "../src/decorators/index.ts": {
-        "version": "df33dd95b6b51feb4dde5f49186125ca6a92f5e1b21c24ef19d9956f958b2749",
-        "signature": "df33dd95b6b51feb4dde5f49186125ca6a92f5e1b21c24ef19d9956f958b2749",
-        "affectsGlobalScope": false
-      },
-      "../src/errors/api-error.ts": {
-        "version": "646e01bf5e0018ac5c33831800a579ffb8372897bcc34b0e539add953de58316",
-        "signature": "3032c947a385e6d974726a2f5f01b8ed0d7263d7174ca9f3e0380addc7cb3d9c",
-        "affectsGlobalScope": false
-      },
-      "../src/errors/api-bad-request-error.ts": {
-        "version": "d626dbe116f7b11cfb2c965d4f7ae04cd9a8c96800cd52cab859a42ffba1e73a",
-        "signature": "874e5a33c60bdfba9483cd03293c793a1df232216d856dc31c5b82407580c389",
-        "affectsGlobalScope": false
-      },
-      "../src/errors/api-conflict-error.ts": {
-        "version": "cb42bbf422e2df5d34cb64d971a34ce7d77a8c88cc9f9d59be875c5d9f074c88",
-        "signature": "2ebd5e18619c82909a9304e96a578621fe08ac22fb9b4899fbbaaac530b16094",
-        "affectsGlobalScope": false
-      },
-      "../src/errors/api-forbidden-error.ts": {
-        "version": "97d8e13c4eafa217155ec0ef6f3afcdeac12f513390e5369425ca2f90a3421c3",
-        "signature": "e0bca998a4ccf13b4dc5581bac1f86e5f730c9254a312acf15eba6ffaabb1632",
-        "affectsGlobalScope": false
-      },
-      "../src/errors/api-unauthorized-error.ts": {
-        "version": "138f1abd4ee00a90fc33d39d875b3c7a122588008685ef8eb7ba18aa0a50ef85",
-        "signature": "9776363fa266295ac210a1bf6bc1a73167a9d4f9c91f39f8ea6d07848f296bf0",
-        "affectsGlobalScope": false
-      },
-      "../src/errors/api-unprocessable-entity-error.ts": {
-        "version": "c388d82d009458864d4be199246205c53ee1e5fef3649c6cc75c88630edcd976",
-        "signature": "862263b085a4b0432c62d68655d391369a48eef330b3d32dd74b595676a1fff6",
-        "affectsGlobalScope": false
-      },
-      "../src/errors/index.ts": {
-        "version": "a8219e22e15175d5e6df81df7514e32277f2b0bd2ce7262feb6da053f5852f51",
-        "signature": "a8219e22e15175d5e6df81df7514e32277f2b0bd2ce7262feb6da053f5852f51",
-        "affectsGlobalScope": false
-      },
       "../src/pipes/parse-date.pipe.ts": {
-        "version": "96d37b88da8c3b9a5d8286cd73cba5fb05776e4820b3b67ce3bd932fe7b2f89a",
-        "signature": "8ad638febb9d8bc0b3f014d0e27b568255b0545f246a5ad1d9169477f5d06537",
+        "version": "8c69f15263ccfe3f69f104f97cc4a293e82939b9bf39be960346ee09b2e93654",
+        "signature": "da28e0f6f6160a417fafa9ed7776233d0b143972e4cd3859e0e644acef1f7a89",
         "affectsGlobalScope": false
       },
       "../node_modules/class-validator/types/validation/validationerror.d.ts": {
@@ -2266,6 +2196,81 @@
         "signature": "050facdd9f6f54f96c5c0e6c049b5d9e4bf6dca7330f3175f376d9c63acea0ff",
         "affectsGlobalScope": false
       },
+      "../src/decorators/body-with-validation.decorator.ts": {
+        "version": "6f350c6747f23e08db76e167b20d9f1d7413eec05c2083b3faa30d1d75f3d45b",
+        "signature": "793e18cc54ad5745fa616551326fa8ec23e81e385d0178523a73dd5b889b221b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/core/helpers/execution-context-host.d.ts": {
+        "version": "2a899aef0c6c94cc3537fe93ec8047647e77a3f52ee7cacda95a8c956d3623fb",
+        "signature": "2a899aef0c6c94cc3537fe93ec8047647e77a3f52ee7cacda95a8c956d3623fb",
+        "affectsGlobalScope": false
+      },
+      "../src/decorators/limit.decorator.ts": {
+        "version": "e29e7f6fb4806db5ef80f4de4e069ff5a5b92cea9d6f2a6aa2541e9d240b60e5",
+        "signature": "76456a237264ede2f142fdc245e17669730582d12f6e187a07b65053cbd658b9",
+        "affectsGlobalScope": false
+      },
+      "../src/decorators/offset.decorator.ts": {
+        "version": "67fb63c2e495831c450d82e901f0419fca7059a113860b7ad4c5845611243371",
+        "signature": "1fcc8ab9f852f66b7113e30a117623c2281c58ce367088711a44a4c6782230eb",
+        "affectsGlobalScope": false
+      },
+      "../src/decorators/page.decorator.ts": {
+        "version": "c76c26b2c83116bcf9c8d9d4218d8d3f32c6d9e5bf88ccc7c46a565ef754a218",
+        "signature": "33cdbeb262d3908dea3805a362f1e5dfa05b48175b68fb5e6c5841a13f95862c",
+        "affectsGlobalScope": false
+      },
+      "../src/decorators/serialization.decorator.ts": {
+        "version": "d5cf9a41f8db32c490722d8e4d612306f7064ca421b35da0c6e2790b99c17283",
+        "signature": "d7f0814a6dcf6e046e578ade137ee85c2e58886659d3805d8f9bfd99cd46abcb",
+        "affectsGlobalScope": false
+      },
+      "../src/decorators/size.decorator.ts": {
+        "version": "3d3f01a10103c2608947aaa2d8e48d931f0e602096cad27c73e197d7235dd7c6",
+        "signature": "d23bce8bfa7f9b330aa2e4161f01798d4ffad2e23ae4b1ae655a1a703c769e43",
+        "affectsGlobalScope": false
+      },
+      "../src/decorators/index.ts": {
+        "version": "d79043e7dcf7153c3f85b5cd58702da263e61a004ef70f36b318735c28d178f7",
+        "signature": "d79043e7dcf7153c3f85b5cd58702da263e61a004ef70f36b318735c28d178f7",
+        "affectsGlobalScope": false
+      },
+      "../src/errors/api-error.ts": {
+        "version": "3cba934ec9cd5bc06614c2c561c3caa2e2f88e5e164407678a3563a30faf8b8b",
+        "signature": "97b09d54bba71a53e83f617927fdde2f7e4d4d75d32c98d17ccc4ecae8778001",
+        "affectsGlobalScope": false
+      },
+      "../src/errors/api-bad-request-error.ts": {
+        "version": "2f8612297c165d7671cdd960f37dd5d304dfeedb2be92481e11c410d7863cfa8",
+        "signature": "f581f15880e8f6e73df3a8da1332fe490f40a0a675e2d344a051bcb43d37a211",
+        "affectsGlobalScope": false
+      },
+      "../src/errors/api-conflict-error.ts": {
+        "version": "6a276790590bd929e68732e9aff42d053096490422d37fe7adb8153bc8b6172c",
+        "signature": "bdc679d40e07b01796de4a7da1822dc3298a780b05d8cf6b98f9761b74301074",
+        "affectsGlobalScope": false
+      },
+      "../src/errors/api-forbidden-error.ts": {
+        "version": "40bd1b6f0bb2a5c60ad15450cc89c2bc943eec507c061a0c91e7a9427aa8dbab",
+        "signature": "feea674e6302b56a03dd7b0f2b02b4f276149659334679dbff2b656e2e4e59c6",
+        "affectsGlobalScope": false
+      },
+      "../src/errors/api-unauthorized-error.ts": {
+        "version": "b84d3e9182d6047ab4da3d038a60887bab98f277498d0c3591bf0e4bc58408d3",
+        "signature": "44dd0aad03d6fda3b7c8153723d825663d12aa2291ea0190a0d28750fa79169a",
+        "affectsGlobalScope": false
+      },
+      "../src/errors/api-unprocessable-entity-error.ts": {
+        "version": "a93bb3ed2039ad33fefd75dc069d9d3f576839a3dd8eda809d3862bfa1fa8fb4",
+        "signature": "9b61b147fb5d3feaa998b2912b130fcc1685e3458fd0526850200a550c075e19",
+        "affectsGlobalScope": false
+      },
+      "../src/errors/index.ts": {
+        "version": "a8219e22e15175d5e6df81df7514e32277f2b0bd2ce7262feb6da053f5852f51",
+        "signature": "a8219e22e15175d5e6df81df7514e32277f2b0bd2ce7262feb6da053f5852f51",
+        "affectsGlobalScope": false
+      },
       "../node_modules/@types/node/globals.d.ts": {
         "version": "6fc83519155969f2457d2454908d68830a6f6480974914c024eaf4e3248a2fd1",
         "signature": "6fc83519155969f2457d2454908d68830a6f6480974914c024eaf4e3248a2fd1",
@@ -2556,13 +2561,33 @@
         "signature": "de82a6002c33f209e07bf00d29b1f706820c98e58b756bb41f07f49b8e6ccf46",
         "affectsGlobalScope": false
       },
+      "../src/utils/pagination.ts": {
+        "version": "cf49d915a4b8f4997e4919c62ab86d81c056b430af6ed000b995fa52ada987ee",
+        "signature": "6c53069b12750ddb3be0617d90a12640183c70a14d3f8e42c1b57342848ea4fa",
+        "affectsGlobalScope": false
+      },
+      "../src/utils/replacer.ts": {
+        "version": "e075ad405ebce08a558203362b2a2305cda806eb9861dff8501564a71f3848d9",
+        "signature": "89167d57a765637c3136d4b6de89102a6d96e88c2f79399ddfebe30732583adf",
+        "affectsGlobalScope": false
+      },
+      "../src/utils/string.ts": {
+        "version": "a96525422133c141319f4ea10ca4e5a9062567f0dcc5cb5170dafb97d9698f5b",
+        "signature": "5f874b7181927d03a69bb01a609559dffb4c9bf5a01112bca2e0735f780f410b",
+        "affectsGlobalScope": false
+      },
+      "../src/utils/index.ts": {
+        "version": "4335e66784549556436663a33deefd2fc3f46cef434cc2e0f84eed318aaad1ee",
+        "signature": "4335e66784549556436663a33deefd2fc3f46cef434cc2e0f84eed318aaad1ee",
+        "affectsGlobalScope": false
+      },
       "../src/index.ts": {
-        "version": "15ad1ad5be377445d26196a421e20542b2d44f804906241371d26ecb27ffe253",
-        "signature": "15ad1ad5be377445d26196a421e20542b2d44f804906241371d26ecb27ffe253",
+        "version": "f9eb1df1a959b3a88142c10341e18614805b0d4700cc60af10ee081c6c3c147a",
+        "signature": "f9eb1df1a959b3a88142c10341e18614805b0d4700cc60af10ee081c6c3c147a",
         "affectsGlobalScope": false
       },
       "../src/jest-setup.ts": {
-        "version": "e169aaf8720820c559d2483f403052f36b27e57b69980c7b87948ac536716a88",
+        "version": "ba61db011c5c2d512fa9d037a441dcbe434010e20ea1e3c960d58cc813f3e4d2",
         "signature": "396a3607ca8288c7dd02dff9b04e6ffb057b3c6f3d12965421373c3da78b65cc",
         "affectsGlobalScope": false
       },
@@ -2787,7 +2812,7 @@
         "affectsGlobalScope": true
       },
       "../src/pipes/parse-date.pipe.spec.ts": {
-        "version": "9832b0cacb2aeb411e7b655236325e67c7272bc7046f0be68a86efa3210e2974",
+        "version": "b5668a792c3429b0d9598f6e142a8c2ddc71bf2ea84cba32e0ebed9b1d2322a7",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -2803,6 +2828,21 @@
       },
       "../src/services/discord.service.spec.ts": {
         "version": "155b604028c056dcdcba6bc614c88523fb08a376490a7203faafcf97ef04989e",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/utils/pagination.spec.ts": {
+        "version": "718ec9889d412a6d89381e0b8c518995fa3c2a3a7b1d0315f5548d3d777a79ef",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/utils/replacer.spec.ts": {
+        "version": "5f8f8d73d8987621face0d28e9e6fb4d28416f63028e4f068993395736512f0a",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/utils/string.spec.ts": {
+        "version": "e32d65c32b872fb3ec0e1072a2915a97b052f8d82fa5b81920c228d0eb631261",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -9136,6 +9176,17 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/interfaces.ts"
       ],
+      "../src/decorators/body-with-validation.decorator.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/pipes/index.ts"
+      ],
       "../src/decorators/index.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -9145,6 +9196,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../src/decorators/api/index.ts",
+        "../src/decorators/body-with-validation.decorator.ts",
         "../src/decorators/limit.decorator.ts",
         "../src/decorators/offset.decorator.ts",
         "../src/decorators/page.decorator.ts",
@@ -9300,7 +9352,8 @@
         "../src/decorators/index.ts",
         "../src/errors/index.ts",
         "../src/pipes/index.ts",
-        "../src/services/index.ts"
+        "../src/services/index.ts",
+        "../src/utils/index.ts"
       ],
       "../src/interfaces.ts": [
         "../node_modules/@nestjs/swagger/index.d.ts",
@@ -9447,6 +9500,75 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/services/cache.service.ts",
         "../src/services/discord.service.ts"
+      ],
+      "../src/utils/index.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/utils/pagination.ts",
+        "../src/utils/replacer.ts",
+        "../src/utils/string.ts"
+      ],
+      "../src/utils/pagination.spec.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/utils/pagination.ts"
+      ],
+      "../src/utils/pagination.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/utils/replacer.spec.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/utils/replacer.ts"
+      ],
+      "../src/utils/replacer.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/utils/string.spec.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/utils/string.ts"
+      ],
+      "../src/utils/string.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -15486,6 +15608,7 @@
       ],
       "../src/decorators/index.ts": [
         "../src/decorators/api/index.ts",
+        "../src/decorators/body-with-validation.decorator.ts",
         "../src/decorators/limit.decorator.ts",
         "../src/decorators/offset.decorator.ts",
         "../src/decorators/page.decorator.ts",
@@ -15534,7 +15657,8 @@
         "../src/decorators/index.ts",
         "../src/errors/index.ts",
         "../src/pipes/index.ts",
-        "../src/services/index.ts"
+        "../src/services/index.ts",
+        "../src/utils/index.ts"
       ],
       "../src/jest-setup.ts": [
         "../node_modules/reflect-metadata/index.d.ts"
@@ -15556,6 +15680,11 @@
       "../src/services/index.ts": [
         "../src/services/cache.service.ts",
         "../src/services/discord.service.ts"
+      ],
+      "../src/utils/index.ts": [
+        "../src/utils/pagination.ts",
+        "../src/utils/replacer.ts",
+        "../src/utils/string.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -16122,6 +16251,7 @@
       "../src/decorators/api/save-api-response.decorator.ts",
       "../src/decorators/api/size-api-query.decorator.ts",
       "../src/decorators/api/unauthorized-api-response.decorator.ts",
+      "../src/decorators/body-with-validation.decorator.ts",
       "../src/decorators/index.ts",
       "../src/decorators/limit.decorator.ts",
       "../src/decorators/offset.decorator.ts",
@@ -16147,7 +16277,14 @@
       "../src/services/cache.service.ts",
       "../src/services/discord.service.spec.ts",
       "../src/services/discord.service.ts",
-      "../src/services/index.ts"
+      "../src/services/index.ts",
+      "../src/utils/index.ts",
+      "../src/utils/pagination.spec.ts",
+      "../src/utils/pagination.ts",
+      "../src/utils/replacer.spec.ts",
+      "../src/utils/replacer.ts",
+      "../src/utils/string.spec.ts",
+      "../src/utils/string.ts"
     ]
   },
   "version": "3.9.7"

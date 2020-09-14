@@ -11,7 +11,7 @@ const common_1 = require("@nestjs/common");
 let ParseDatePipe = class ParseDatePipe {
     transform(value) {
         const parsed = Date.parse(value);
-        return parsed ? new Date(parsed) : parsed;
+        return parsed ? new Date(parsed) : null;
     }
 };
 ParseDatePipe = __decorate([
