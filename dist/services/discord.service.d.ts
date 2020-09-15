@@ -16,5 +16,5 @@ export declare class DiscordService {
     private readonly options;
     private readonly hook;
     constructor(options: DiscordServiceOptions);
-    emitError(alias: string, token: string, context?: DiscordServiceContext): Promise<Message | null>;
+    emitError(alias: string, logToken: string, httpMethod?: string, httpPath?: string, context?: DiscordServiceContext): Promise<Message | null>;
 }

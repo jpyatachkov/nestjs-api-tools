@@ -2552,8 +2552,8 @@
         "affectsGlobalScope": true
       },
       "../src/services/discord.service.ts": {
-        "version": "b0aab61c9c86b24064338adfce176c2a8eeaed753df31b640331ae658e5dfba9",
-        "signature": "42262e570d4215c96c2a973943185cc8f3c67e86f8bdc328aaf23312f6e6ade0",
+        "version": "43e8f0ae7bdf1de8b59233919c2048a757c5a5a3103bab2d6ae919236a6fb68e",
+        "signature": "40ba390baad696b2d48edef5231ff7979a33590d931c4da1b2c3aeb337b64342",
         "affectsGlobalScope": false
       },
       "../src/services/index.ts": {

@@ -23,14 +23,15 @@ let DiscordService = class DiscordService {
             this.hook = new discord_js_1.WebhookClient(options.id, options.token);
         }
     }
-    async emitError(alias, token, context = {}) {
+    async emitError(alias, logToken, httpMethod = null, httpPath = null, context = {}) {
         if (!this.hook) {
             return null;
         }
+        const title = httpMethod && httpPath ? `${httpMethod} ${httpPath} ` : '' + `ERROR: ${alias}${this.options.debug ? ' (DEBUG)' : ''}`;
         const errorMessage = new discord_js_1.MessageEmbed()
             .setColor(this.options.debug ? '#0000FF' : '#FF0000')
-            .setTitle(`ERROR: ${alias}${this.options.debug ? ' (DEBUG)' : ''}`)
-            .addField('LOG TOKEN', `\`${token}\``)
+            .setTitle(title)
+            .addField('LOG TOKEN', `\`${logToken}\``)
             .setAuthor(this.options.domain || 'DEBUG')
             .setTimestamp();
         for (const [key, value] of Object.entries(context)) {

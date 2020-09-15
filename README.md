@@ -249,6 +249,42 @@ import {DISCORD_SERVICE_OPTIONS} from './constants';
 }
 ```
 
+Use this service as following:
+
+```ts
+import {nanoid} from 'nanoid';
+
+// This token will help to match Discord logs with text logs.
+// You should generate it manually every time you need to send something to Discord to pass it in all parts of your logging system.
+// If possible, it should be unique or at least rarely recurring, good case for nanoid package https://github.com/ai/nanoid
+const logToken = nanoid();
+
+// Discord logging context. Feel free to skip this property or pass empty object.
+// This is an extra data for logging organized as following:
+// {
+//   entity1: {
+//     id: 11,
+//     guid: 'UUID',
+//     discordNotifyText: 'anything you want',
+//   },
+//   entity2: {
+//     id: 11,
+//     guid: 'UUID',
+//     discordNotifyText: 'anything you want',
+//   },
+//   ...
+// },
+const context = {};
+
+this.discordService.emitError(
+    'ERROR_ALIAS', 
+    logToken,
+    'POST', // HTTP method. You can set it to null if no method used (it's not HTTP service) or the method does not matter.
+    '/api/v1/example', // HTTP path. Also nullish.
+    context,
+);
+```
+
 ### Utils
 
 Set of functions for transformations.

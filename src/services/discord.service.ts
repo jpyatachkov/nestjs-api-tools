@@ -37,17 +37,21 @@ export class DiscordService {
 
   public async emitError(
     alias: string,
-    token: string,
+    logToken: string,
+    httpMethod: string = null,
+    httpPath: string = null,
     context: DiscordServiceContext = {},
   ): Promise<Message | null> {
     if (!this.hook) {
       return null;
     }
 
+    const title = httpMethod && httpPath ? `${httpMethod} ${httpPath} ` : '' + `ERROR: ${alias}${this.options.debug ? ' (DEBUG)' : ''}`;
+
     const errorMessage = new MessageEmbed()
       .setColor(this.options.debug ? '#0000FF' : '#FF0000')
-      .setTitle(`ERROR: ${alias}${this.options.debug ? ' (DEBUG)' : ''}`)
-      .addField('LOG TOKEN', `\`${token}\``)
+      .setTitle(title)
+      .addField('LOG TOKEN', `\`${logToken}\``)
       .setAuthor(this.options.domain || 'DEBUG')
       .setTimestamp();
 
