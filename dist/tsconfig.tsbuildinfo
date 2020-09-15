@@ -2582,8 +2582,8 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "f9eb1df1a959b3a88142c10341e18614805b0d4700cc60af10ee081c6c3c147a",
-        "signature": "f9eb1df1a959b3a88142c10341e18614805b0d4700cc60af10ee081c6c3c147a",
+        "version": "ddc996aff3ca41aa8b6a700e948bbe0b32f239c6ca36c119368e661757193640",
+        "signature": "ddc996aff3ca41aa8b6a700e948bbe0b32f239c6ca36c119368e661757193640",
         "affectsGlobalScope": false
       },
       "../src/jest-setup.ts": {
@@ -9349,6 +9349,7 @@
         "../node_modules/@types/node/ts3.2/process.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
+        "../src/constants.ts",
         "../src/decorators/index.ts",
         "../src/errors/index.ts",
         "../src/pipes/index.ts",
@@ -15654,6 +15655,7 @@
         "../src/errors/api-unprocessable-entity-error.ts"
       ],
       "../src/index.ts": [
+        "../src/constants.ts",
         "../src/decorators/index.ts",
         "../src/errors/index.ts",
         "../src/pipes/index.ts",
