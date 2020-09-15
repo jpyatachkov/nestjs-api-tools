@@ -199,7 +199,7 @@ import {VALIDATION_PIPE_OPTIONS} from './constants';
 
 {
   provide: VALIDATION_PIPE_OPTIONS,
-  value: {
+  useValue: {
     depth: 10, // Maximum depth of recursion while JSON error rendering.
   },
 }
@@ -220,7 +220,7 @@ import {CACHE_SERVICE_OPTIONS} from './constants';
 
 {
   provide: CACHE_SERVICE_OPTIONS,
-  value: {
+  useValue: {
     ttl: 60, // Default cache value TTL in seconds.
     useClones: false, // Clone values when setting to cache or not.
   },
@@ -240,11 +240,11 @@ import {DISCORD_SERVICE_OPTIONS} from './constants';
 
 {
   provide: DISCORD_SERVICE_OPTIONS,
-  value: {
-    debug: false; // Should be global app debug flag to distinguish production environment messages from stage or local messages, if all these envs are connected to the same discord channel.
-    domain: ''; // Application domain - used for the same purposes as the debug flag.
-    id: ''; // Discord API ID.
-    token: ''; // Discord API token.
+  useValue: {
+    debug: false, // Should be global app debug flag to distinguish production environment messages from stage or local messages, if all these envs are connected to the same discord channel.
+    domain: '', // Application domain - used for the same purposes as the debug flag.
+    id: '', // Discord API ID.
+    token: '', // Discord API token.
   },
 }
 ```
