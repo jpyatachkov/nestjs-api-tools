@@ -1,4 +1,4 @@
-import {ApiError} from '@/interfaces';
+import {ApiErrorResponse} from '@/interfaces';
 import {ApiForbiddenResponse} from '@nestjs/swagger';
 
 /**
@@ -6,5 +6,5 @@ import {ApiForbiddenResponse} from '@nestjs/swagger';
  */
 export const ForbiddenApiResponse = (description = 'Недостаточно прав для выполнения операции'): MethodDecorator & ClassDecorator => ApiForbiddenResponse({
   description,
-  type: ApiError,
+  type: ApiErrorResponse,
 });

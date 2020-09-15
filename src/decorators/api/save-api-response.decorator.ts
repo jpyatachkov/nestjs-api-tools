@@ -1,7 +1,7 @@
 import {ApiBadRequestResponse, ApiResponse} from '@nestjs/swagger';
 import {HttpCode, HttpStatus, applyDecorators} from '@nestjs/common';
 
-import {ApiError} from '@/interfaces';
+import {ApiErrorResponse} from '@/interfaces';
 
 export interface SaveApiResponseOptions {
   type?: any;
@@ -24,6 +24,6 @@ export const SaveApiResponse = (options: SaveApiResponseOptions): MethodDecorato
   }),
   ApiBadRequestResponse({
     description: options.errorDescription || 'Некорректное тело запроса',
-    type: ApiError,
+    type: ApiErrorResponse,
   }),
 );

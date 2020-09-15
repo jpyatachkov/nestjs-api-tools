@@ -1,4 +1,4 @@
-import {ApiError} from '@/interfaces';
+import {ApiErrorResponse} from '@/interfaces';
 import {ApiNotFoundResponse} from '@nestjs/swagger';
 
 /**
@@ -6,5 +6,5 @@ import {ApiNotFoundResponse} from '@nestjs/swagger';
  */
 export const NotFoundApiResponse = (description = 'Запрашиваемый ресурс не найден'): MethodDecorator & ClassDecorator => ApiNotFoundResponse({
   description,
-  type: ApiError,
+  type: ApiErrorResponse,
 });

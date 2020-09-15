@@ -1,4 +1,4 @@
-import {ApiError} from '@/interfaces';
+import {ApiErrorResponse} from '@/interfaces';
 import {ApiUnauthorizedResponse} from '@nestjs/swagger';
 
 /**
@@ -6,5 +6,5 @@ import {ApiUnauthorizedResponse} from '@nestjs/swagger';
  */
 export const UnauthorizedApiResponse = (description = 'Пользователь не авторизован'): MethodDecorator & ClassDecorator => ApiUnauthorizedResponse({
   description,
-  type: ApiError,
+  type: ApiErrorResponse,
 });

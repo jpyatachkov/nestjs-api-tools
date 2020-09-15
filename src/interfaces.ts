@@ -1,6 +1,6 @@
 import {ApiProperty} from '@nestjs/swagger';
 
-export class ApiError {
+export class ApiErrorResponse {
 
   @ApiProperty({
     description: 'HTTP-код ошибки, например 400 или 500',
