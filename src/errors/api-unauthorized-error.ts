@@ -1,4 +1,4 @@
-import {ApiError} from '@/errors/api-error';
+import {ApiError} from './api-error';
 import {HttpStatus} from '@nestjs/common';
 
 /**

@@ -2242,28 +2242,28 @@
         "affectsGlobalScope": false
       },
       "../src/errors/api-bad-request-error.ts": {
-        "version": "2f8612297c165d7671cdd960f37dd5d304dfeedb2be92481e11c410d7863cfa8",
-        "signature": "f581f15880e8f6e73df3a8da1332fe490f40a0a675e2d344a051bcb43d37a211",
+        "version": "6f330c1b4ad2e3589fa4ee6feb36313f2cbd644ac74fa6a9612470a26e4c30be",
+        "signature": "a0f1fb4301b9afb90f57b03da48ca51ceb1d08e9e620ff91a2f082865e628b01",
         "affectsGlobalScope": false
       },
       "../src/errors/api-conflict-error.ts": {
-        "version": "6a276790590bd929e68732e9aff42d053096490422d37fe7adb8153bc8b6172c",
-        "signature": "bdc679d40e07b01796de4a7da1822dc3298a780b05d8cf6b98f9761b74301074",
+        "version": "07dfb2a1ef55e027eccfe581af7dd7273da1c10fdcc2628056bc47e6a33fc9f2",
+        "signature": "c55d16ccc006d6570eeaae76c2226a78fb57d3cb748a6c1a5c24e61692bcbb2d",
         "affectsGlobalScope": false
       },
       "../src/errors/api-forbidden-error.ts": {
-        "version": "40bd1b6f0bb2a5c60ad15450cc89c2bc943eec507c061a0c91e7a9427aa8dbab",
-        "signature": "feea674e6302b56a03dd7b0f2b02b4f276149659334679dbff2b656e2e4e59c6",
+        "version": "f6ab4d40f5636cfad14c79225b5f7e753998af4b15f083c0ab6327dc214ea96a",
+        "signature": "7d0adb9d150f5122641698d9d833171c7b78113a79331376a5806be955caad2d",
         "affectsGlobalScope": false
       },
       "../src/errors/api-unauthorized-error.ts": {
-        "version": "b84d3e9182d6047ab4da3d038a60887bab98f277498d0c3591bf0e4bc58408d3",
-        "signature": "44dd0aad03d6fda3b7c8153723d825663d12aa2291ea0190a0d28750fa79169a",
+        "version": "2dae814da5a1fbdca7dfdbbf2b93569527125e214b28dc3a02f7d27b8306b513",
+        "signature": "1792937c7c87c143734090a2f4d5f69a564be45950ae6ea94d023fb319aefc1c",
         "affectsGlobalScope": false
       },
       "../src/errors/api-unprocessable-entity-error.ts": {
-        "version": "a93bb3ed2039ad33fefd75dc069d9d3f576839a3dd8eda809d3862bfa1fa8fb4",
-        "signature": "9b61b147fb5d3feaa998b2912b130fcc1685e3458fd0526850200a550c075e19",
+        "version": "08ca8245e4e96702e66ee42c6f932ba5ae46362695b13956e1bf1fa16753a7ad",
+        "signature": "2eae8decafa13fab813ee2c64b198acc2b748b3d0754a08f9ce06535b09d246e",
         "affectsGlobalScope": false
       },
       "../src/errors/index.ts": {
