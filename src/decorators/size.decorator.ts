@@ -1,5 +1,5 @@
 import {ExecutionContextHost} from '@nestjs/core/helpers/execution-context-host';
-import {SIZE_PARAM} from '@/constants';
+import {SIZE_PARAM} from '../constants';
 import {createParamDecorator} from '@nestjs/common';
 
 export interface SizeOptions {

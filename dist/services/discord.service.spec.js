@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const testing_1 = require("@nestjs/testing");
-const constants_1 = require("@/constants");
+const constants_1 = require("../constants");
 const discord_service_1 = require("./discord.service");
 const discord_js_1 = require("discord.js");
 const faker_1 = __importDefault(require("faker"));

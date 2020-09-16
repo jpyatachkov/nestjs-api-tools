@@ -1,5 +1,5 @@
 import {ExecutionContextHost} from '@nestjs/core/helpers/execution-context-host';
-import {PAGE_PARAM} from '@/constants';
+import {PAGE_PARAM} from '../constants';
 import {createParamDecorator} from '@nestjs/common';
 
 export interface PageOptions {

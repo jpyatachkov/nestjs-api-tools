@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Size = void 0;
-const constants_1 = require("@/constants");
+const constants_1 = require("../constants");
 const common_1 = require("@nestjs/common");
 exports.Size = common_1.createParamDecorator((options = {
     defaultSize: 100,

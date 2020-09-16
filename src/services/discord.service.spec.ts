@@ -1,6 +1,6 @@
 import {Test, TestingModule} from '@nestjs/testing';
 
-import {DISCORD_SERVICE_OPTIONS} from '@/constants';
+import {DISCORD_SERVICE_OPTIONS} from '../constants';
 import {DiscordService} from './discord.service';
 import {MessageEmbed} from 'discord.js';
 import faker from 'faker';

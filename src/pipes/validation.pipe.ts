@@ -2,7 +2,7 @@ import {ArgumentMetadata, BadRequestException, Inject, Injectable, Logger, PipeT
 import {ValidationError, validate} from 'class-validator';
 
 import {I18nRequestScopeService} from 'nestjs-i18n';
-import {VALIDATION_PIPE_OPTIONS} from '@/constants';
+import {VALIDATION_PIPE_OPTIONS} from '../constants';
 import {plainToClass} from 'class-transformer';
 
 export interface ValidationPipeOptions {

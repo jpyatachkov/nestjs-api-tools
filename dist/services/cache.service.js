@@ -17,7 +17,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CacheService = void 0;
 const common_1 = require("@nestjs/common");
-const constants_1 = require("@/constants");
+const constants_1 = require("../constants");
 const node_cache_1 = __importDefault(require("node-cache"));
 let CacheService = class CacheService {
     constructor(options) {

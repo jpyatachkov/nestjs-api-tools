@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DiscordService = void 0;
 const common_1 = require("@nestjs/common");
 const discord_js_1 = require("discord.js");
-const constants_1 = require("@/constants");
+const constants_1 = require("../constants");
 let DiscordService = class DiscordService {
     constructor(options) {
         this.options = options;

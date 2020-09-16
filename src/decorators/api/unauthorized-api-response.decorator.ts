@@ -1,4 +1,4 @@
-import {ApiErrorResponse} from '@/interfaces';
+import {ApiErrorResponse} from '../../interfaces';
 import {ApiUnauthorizedResponse} from '@nestjs/swagger';
 
 /**

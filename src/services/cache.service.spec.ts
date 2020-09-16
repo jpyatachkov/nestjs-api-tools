@@ -1,6 +1,6 @@
 import {Test, TestingModule} from '@nestjs/testing';
 
-import {CACHE_SERVICE_OPTIONS} from '@/constants';
+import {CACHE_SERVICE_OPTIONS} from '../constants';
 import {CacheService} from './cache.service';
 import faker from 'faker';
 

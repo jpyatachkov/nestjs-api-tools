@@ -5,7 +5,7 @@ import {Test, TestingModule} from '@nestjs/testing';
 
 import {BadRequestException} from '@nestjs/common';
 import {I18nRequestScopeService} from 'nestjs-i18n';
-import {VALIDATION_PIPE_OPTIONS} from '@/constants';
+import {VALIDATION_PIPE_OPTIONS} from '../constants';
 import {ValidationPipe} from './validation.pipe';
 import faker from 'faker';
 

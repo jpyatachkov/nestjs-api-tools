@@ -1,7 +1,7 @@
 import {ApiBadRequestResponse, ApiResponse} from '@nestjs/swagger';
 import {HttpCode, HttpStatus, applyDecorators} from '@nestjs/common';
 
-import {ApiErrorResponse} from '@/interfaces';
+import {ApiErrorResponse} from '../../interfaces';
 
 export interface SaveApiResponseOptions {
   type?: any;

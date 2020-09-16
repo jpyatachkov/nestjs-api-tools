@@ -1,7 +1,7 @@
 import {Inject, Injectable} from '@nestjs/common';
 import {Message, MessageEmbed, WebhookClient} from 'discord.js';
 
-import {DISCORD_SERVICE_OPTIONS} from '@/constants';
+import {DISCORD_SERVICE_OPTIONS} from '../constants';
 
 export interface DiscordServiceContext {
   [key: string]: Partial<{

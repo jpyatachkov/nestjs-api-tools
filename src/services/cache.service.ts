@@ -1,6 +1,6 @@
 import {Inject, Injectable} from '@nestjs/common';
 
-import {CACHE_SERVICE_OPTIONS} from '@/constants';
+import {CACHE_SERVICE_OPTIONS} from '../constants';
 import NodeCache from 'node-cache';
 
 export interface CacheServiceOptions {

@@ -1,5 +1,5 @@
 import {Body} from '@nestjs/common';
-import {ValidationPipe} from '@/pipes';
+import {ValidationPipe} from '../pipes';
 
 /**
  * Explicit validation usage with whitelisting. Name illustrates the contradiction between

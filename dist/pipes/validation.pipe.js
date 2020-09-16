@@ -17,7 +17,7 @@ exports.ValidationPipe = void 0;
 const common_1 = require("@nestjs/common");
 const class_validator_1 = require("class-validator");
 const nestjs_i18n_1 = require("nestjs-i18n");
-const constants_1 = require("@/constants");
+const constants_1 = require("../constants");
 const class_transformer_1 = require("class-transformer");
 let ValidationPipe = ValidationPipe_1 = class ValidationPipe {
     constructor(i18n, options) {

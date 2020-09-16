@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.SaveApiResponse = void 0;
 const swagger_1 = require("@nestjs/swagger");
 const common_1 = require("@nestjs/common");
-const interfaces_1 = require("@/interfaces");
+const interfaces_1 = require("../../interfaces");
 exports.SaveApiResponse = (options) => common_1.applyDecorators(common_1.HttpCode(options.status || common_1.HttpStatus.CREATED), swagger_1.ApiResponse({
     status: options.status || common_1.HttpStatus.CREATED,
     description: options.description,

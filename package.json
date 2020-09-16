@@ -27,6 +27,18 @@
     "url": "https://github.com/jpyatachkov/nestjs-api-tools/issues"
   },
   "homepage": "https://github.com/jpyatachkov/nestjs-api-tools#readme",
+  "dependencies": {
+    "@nestjs/common": "^7.4.2",
+    "@nestjs/core": "^7.4.2",
+    "@nestjs/swagger": "^4.5.12",
+    "class-transformer": "^0.3.1",
+    "class-validator": "^0.12.2",
+    "discord.js": "^12.3.1",
+    "nestjs-i18n": "^8.0.8",
+    "node-cache": "^5.1.2",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-optional-chaining": "^7.11.0",
@@ -62,9 +74,6 @@
     ],
     "rootDir": "src",
     "testRegex": ".spec.ts$",
-    "moduleNameMapper": {
-      "@/(.*)": "<rootDir>/$1"
-    },
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
@@ -73,17 +82,5 @@
     "setupFiles": [
       "./jest-setup.ts"
     ]
-  },
-  "dependencies": {
-    "@nestjs/common": "^7.4.2",
-    "@nestjs/core": "^7.4.2",
-    "@nestjs/swagger": "^4.5.12",
-    "class-transformer": "^0.3.1",
-    "class-validator": "^0.12.2",
-    "discord.js": "^12.3.1",
-    "nestjs-i18n": "^8.0.8",
-    "node-cache": "^5.1.2",
-    "reflect-metadata": "^0.1.13",
-    "rxjs": "^6.6.2"
   }
 }
