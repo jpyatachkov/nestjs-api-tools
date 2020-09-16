@@ -9,9 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ApiError = void 0;
+exports.ApiErrorResponse = void 0;
 const swagger_1 = require("@nestjs/swagger");
-class ApiError {
+class ApiErrorResponse {
 }
 __decorate([
     swagger_1.ApiProperty({
@@ -19,20 +19,20 @@ __decorate([
         example: 403,
     }),
     __metadata("design:type", Number)
-], ApiError.prototype, "statusCode", void 0);
+], ApiErrorResponse.prototype, "statusCode", void 0);
 __decorate([
     swagger_1.ApiProperty({
         description: 'Название ошибки - Bad Request, Internal Server Error',
         example: 'Forbidden',
     }),
     __metadata("design:type", String)
-], ApiError.prototype, "error", void 0);
+], ApiErrorResponse.prototype, "error", void 0);
 __decorate([
     swagger_1.ApiProperty({
         description: 'Сообщение клиенту API',
         example: 'У Вас нет прав на выполнение этой операции',
     }),
     __metadata("design:type", String)
-], ApiError.prototype, "message", void 0);
-exports.ApiError = ApiError;
+], ApiErrorResponse.prototype, "message", void 0);
+exports.ApiErrorResponse = ApiErrorResponse;
 //# sourceMappingURL=interfaces.js.map

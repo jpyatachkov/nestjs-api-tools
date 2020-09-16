@@ -5,6 +5,6 @@ const interfaces_1 = require("@/interfaces");
 const swagger_1 = require("@nestjs/swagger");
 exports.ForbiddenApiResponse = (description = 'Недостаточно прав для выполнения операции') => swagger_1.ApiForbiddenResponse({
     description,
-    type: interfaces_1.ApiError,
+    type: interfaces_1.ApiErrorResponse,
 });
 //# sourceMappingURL=forbidden-api-response.decorator.js.map

@@ -5,6 +5,6 @@ const interfaces_1 = require("@/interfaces");
 const swagger_1 = require("@nestjs/swagger");
 exports.NotFoundApiResponse = (description = 'Запрашиваемый ресурс не найден') => swagger_1.ApiNotFoundResponse({
     description,
-    type: interfaces_1.ApiError,
+    type: interfaces_1.ApiErrorResponse,
 });
 //# sourceMappingURL=not-found-api-response.decorator.js.map

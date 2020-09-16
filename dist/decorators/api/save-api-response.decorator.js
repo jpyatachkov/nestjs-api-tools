@@ -11,6 +11,6 @@ exports.SaveApiResponse = (options) => common_1.applyDecorators(common_1.HttpCod
     isArray: options.isArray,
 }), swagger_1.ApiBadRequestResponse({
     description: options.errorDescription || 'Некорректное тело запроса',
-    type: interfaces_1.ApiError,
+    type: interfaces_1.ApiErrorResponse,
 }));
 //# sourceMappingURL=save-api-response.decorator.js.map
