@@ -1,4 +1,5 @@
-import { ApiError } from './api-error';
-export declare abstract class ApiForbiddenError extends ApiError {
-    protected constructor(error: string, message: string);
+import { ExternalMessageable } from './external-messageable';
+import { ForbiddenException } from '@nestjs/common';
+export declare abstract class ApiForbiddenError extends ForbiddenException implements ExternalMessageable {
+    getExternalLogMessage(): string | any | null;
 }

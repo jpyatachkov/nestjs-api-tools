@@ -1,19 +1,12 @@
-import {ApiError} from './api-error';
-import {HttpStatus} from '@nestjs/common';
+import {ConflictException} from '@nestjs/common';
+import {ExternalMessageable} from './external-messageable';
 
 /**
  * HTTP 409 status code.
  */
-export abstract class ApiConflictError extends ApiError {
+export abstract class ApiConflictError extends ConflictException implements ExternalMessageable {
 
-  protected constructor(
-    error: string,
-    message: string,
-  ) {
-    super(
-      error,
-      message,
-      HttpStatus.CONFLICT,
-    );
+  public getExternalLogMessage(): string | any | null {
+    return null;
   }
 }

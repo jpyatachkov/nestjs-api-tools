@@ -12,8 +12,8 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./api-bad-request-error"), exports);
 __exportStar(require("./api-conflict-error"), exports);
-__exportStar(require("./api-error"), exports);
 __exportStar(require("./api-forbidden-error"), exports);
 __exportStar(require("./api-unauthorized-error"), exports);
 __exportStar(require("./api-unprocessable-entity-error"), exports);
+__exportStar(require("./external-messageable"), exports);
 //# sourceMappingURL=index.js.map

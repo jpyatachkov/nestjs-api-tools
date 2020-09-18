@@ -1,19 +1,12 @@
-import {ApiError} from './api-error';
-import {HttpStatus} from '@nestjs/common';
+import {ExternalMessageable} from './external-messageable';
+import {UnauthorizedException} from '@nestjs/common';
 
 /**
  * HTTP 401 status code.
  */
-export abstract class ApiUnauthorizedError extends ApiError {
+export abstract class ApiUnauthorizedError extends UnauthorizedException implements ExternalMessageable {
 
-  protected constructor(
-    error: string,
-    message: string,
-  ) {
-    super(
-      error,
-      message,
-      HttpStatus.UNAUTHORIZED,
-    );
+  public getExternalLogMessage(): string | any | null {
+    return null;
   }
 }

@@ -1,1 +1,1 @@
-{"version":3,"file":"api-forbidden-error.js","sourceRoot":"","sources":["../../src/errors/api-forbidden-error.ts"],"names":[],"mappings":";;;AAAA,2CAAqC;AACrC,2CAA0C;AAK1C,MAAsB,iBAAkB,SAAQ,oBAAQ;IAEtD,YACE,KAAa,EACb,OAAe;QAEf,KAAK,CACH,KAAK,EACL,OAAO,EACP,mBAAU,CAAC,SAAS,CACrB,CAAC;IACJ,CAAC;CACF;AAZD,8CAYC"}
+{"version":3,"file":"api-forbidden-error.js","sourceRoot":"","sources":["../../src/errors/api-forbidden-error.ts"],"names":[],"mappings":";;;AACA,2CAAkD;AAKlD,MAAsB,iBAAkB,SAAQ,2BAAkB;IAEzD,qBAAqB;QAC1B,OAAO,IAAI,CAAC;IACd,CAAC;CACF;AALD,8CAKC"}

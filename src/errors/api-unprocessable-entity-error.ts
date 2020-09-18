@@ -1,19 +1,12 @@
-import {ApiError} from './api-error';
-import {HttpStatus} from '@nestjs/common';
+import {ExternalMessageable} from './external-messageable';
+import {UnprocessableEntityException} from '@nestjs/common';
 
 /**
  * HTTP 422 status code.
  */
-export abstract class ApiUnprocessableEntityError extends ApiError {
+export abstract class ApiUnprocessableEntityError extends UnprocessableEntityException implements ExternalMessageable {
 
-  protected constructor(
-    error: string,
-    message: string,
-  ) {
-    super(
-      error,
-      message,
-      HttpStatus.UNPROCESSABLE_ENTITY,
-    );
+  public getExternalLogMessage(): string | any | null {
+    return null;
   }
 }

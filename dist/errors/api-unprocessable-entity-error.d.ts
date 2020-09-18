@@ -1,4 +1,5 @@
-import { ApiError } from './api-error';
-export declare abstract class ApiUnprocessableEntityError extends ApiError {
-    protected constructor(error: string, message: string);
+import { ExternalMessageable } from './external-messageable';
+import { UnprocessableEntityException } from '@nestjs/common';
+export declare abstract class ApiUnprocessableEntityError extends UnprocessableEntityException implements ExternalMessageable {
+    getExternalLogMessage(): string | any | null;
 }

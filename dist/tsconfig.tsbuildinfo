@@ -1471,39 +1471,39 @@
         "signature": "df33dd95b6b51feb4dde5f49186125ca6a92f5e1b21c24ef19d9956f958b2749",
         "affectsGlobalScope": false
       },
-      "../src/errors/api-error.ts": {
-        "version": "3cba934ec9cd5bc06614c2c561c3caa2e2f88e5e164407678a3563a30faf8b8b",
-        "signature": "97b09d54bba71a53e83f617927fdde2f7e4d4d75d32c98d17ccc4ecae8778001",
+      "../src/errors/external-messageable.ts": {
+        "version": "9ebb8851443f78cbb7d6f7e4ecce3f59f3651dd7db36e76f16292eb349d0e1c4",
+        "signature": "fed03db478cdec4efb34c0a4c6e669912d02631560ca8ab454ddada0720cdc47",
         "affectsGlobalScope": false
       },
       "../src/errors/api-bad-request-error.ts": {
-        "version": "6f330c1b4ad2e3589fa4ee6feb36313f2cbd644ac74fa6a9612470a26e4c30be",
-        "signature": "a0f1fb4301b9afb90f57b03da48ca51ceb1d08e9e620ff91a2f082865e628b01",
+        "version": "49532d6d4044c72711726f2e03e0a36c349e9f381ad98e251d589dbdf2f3f3c3",
+        "signature": "052c154874b239817ab6ee6dc8035095473107eb6a6f31d70ca7869d0649f28c",
         "affectsGlobalScope": false
       },
       "../src/errors/api-conflict-error.ts": {
-        "version": "07dfb2a1ef55e027eccfe581af7dd7273da1c10fdcc2628056bc47e6a33fc9f2",
-        "signature": "c55d16ccc006d6570eeaae76c2226a78fb57d3cb748a6c1a5c24e61692bcbb2d",
+        "version": "06d2e24fd7583016ee6c676d8deaea3789e233a6ed47bfa32f2aa73094c76573",
+        "signature": "14d9b62b217f596e91f7edc64ab37c28efb381affdc936a978cc37374bd3cf43",
         "affectsGlobalScope": false
       },
       "../src/errors/api-forbidden-error.ts": {
-        "version": "f6ab4d40f5636cfad14c79225b5f7e753998af4b15f083c0ab6327dc214ea96a",
-        "signature": "7d0adb9d150f5122641698d9d833171c7b78113a79331376a5806be955caad2d",
+        "version": "a8be5ff9098bc8f16c6bb01d8d826572b86d45d1e17c9197e66a87cd9944039e",
+        "signature": "1db6340bfb37ee2563b7f8fa745e115b33cedc6912f42825963c28b3a6efbf40",
         "affectsGlobalScope": false
       },
       "../src/errors/api-unauthorized-error.ts": {
-        "version": "2dae814da5a1fbdca7dfdbbf2b93569527125e214b28dc3a02f7d27b8306b513",
-        "signature": "1792937c7c87c143734090a2f4d5f69a564be45950ae6ea94d023fb319aefc1c",
+        "version": "c1c2d36b70369981028598a2f105cb474e5e627dd290cf04d7fdf1434309957d",
+        "signature": "00fe29ccd849d79f12ebd9802428f2646e1b64bb90ff3a8076f6b9ce2cd01dab",
         "affectsGlobalScope": false
       },
       "../src/errors/api-unprocessable-entity-error.ts": {
-        "version": "08ca8245e4e96702e66ee42c6f932ba5ae46362695b13956e1bf1fa16753a7ad",
-        "signature": "2eae8decafa13fab813ee2c64b198acc2b748b3d0754a08f9ce06535b09d246e",
+        "version": "fb2193fa06d287a8ae48d10ac7fdfb1966cefdc561a5d501b584d4e911e1490f",
+        "signature": "832a218847f89c6305fff1f0007f40097545198356569dd78df45408d6df5fbe",
         "affectsGlobalScope": false
       },
       "../src/errors/index.ts": {
-        "version": "a8219e22e15175d5e6df81df7514e32277f2b0bd2ce7262feb6da053f5852f51",
-        "signature": "a8219e22e15175d5e6df81df7514e32277f2b0bd2ce7262feb6da053f5852f51",
+        "version": "6bf6a93eaecc4c89139bf46d3465e11ae85f6ed6cb964dcfd983d251f74b00c5",
+        "signature": "6bf6a93eaecc4c89139bf46d3465e11ae85f6ed6cb964dcfd983d251f74b00c5",
         "affectsGlobalScope": false
       },
       "../src/pipes/parse-date.pipe.ts": {
@@ -2181,14 +2181,9 @@
         "signature": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
         "affectsGlobalScope": false
       },
-      "../node_modules/@types/jest/ts3.1/index.d.ts": {
-        "version": "89d3831f0a7b5bfbfc53a6fa5534b6f4b8325a21b8fa6e538f063c6223c5eef2",
-        "signature": "89d3831f0a7b5bfbfc53a6fa5534b6f4b8325a21b8fa6e538f063c6223c5eef2",
-        "affectsGlobalScope": true
-      },
       "../node_modules/@types/jest/index.d.ts": {
-        "version": "57bca3fdd1addb77fee1634b2db8f34b906a06f5e5146408b57d85c37249b7ea",
-        "signature": "57bca3fdd1addb77fee1634b2db8f34b906a06f5e5146408b57d85c37249b7ea",
+        "version": "f2b73fbe0e4e473289046067e91303cd1b0994206edc6d38b80aa45692afa6b8",
+        "signature": "f2b73fbe0e4e473289046067e91303cd1b0994206edc6d38b80aa45692afa6b8",
         "affectsGlobalScope": true
       },
       "../node_modules/@types/json-schema/index.d.ts": {
@@ -4758,16 +4753,6 @@
       ],
       "../node_modules/@types/jest/index.d.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/jest/ts3.1/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/process.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../node_modules/@types/jest/ts3.1/index.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/process.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -6855,7 +6840,7 @@
         "../node_modules/@types/node/ts3.2/process.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/errors/api-error.ts"
+        "../src/errors/external-messageable.ts"
       ],
       "../src/errors/api-conflict-error.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -6866,17 +6851,7 @@
         "../node_modules/@types/node/ts3.2/process.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/errors/api-error.ts"
-      ],
-      "../src/errors/api-error.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/process.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
+        "../src/errors/external-messageable.ts"
       ],
       "../src/errors/api-forbidden-error.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -6887,7 +6862,7 @@
         "../node_modules/@types/node/ts3.2/process.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/errors/api-error.ts"
+        "../src/errors/external-messageable.ts"
       ],
       "../src/errors/api-unauthorized-error.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -6898,7 +6873,7 @@
         "../node_modules/@types/node/ts3.2/process.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/errors/api-error.ts"
+        "../src/errors/external-messageable.ts"
       ],
       "../src/errors/api-unprocessable-entity-error.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -6909,7 +6884,16 @@
         "../node_modules/@types/node/ts3.2/process.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/errors/api-error.ts"
+        "../src/errors/external-messageable.ts"
+      ],
+      "../src/errors/external-messageable.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
       ],
       "../src/errors/index.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -6921,10 +6905,10 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/errors/api-bad-request-error.ts",
         "../src/errors/api-conflict-error.ts",
-        "../src/errors/api-error.ts",
         "../src/errors/api-forbidden-error.ts",
         "../src/errors/api-unauthorized-error.ts",
-        "../src/errors/api-unprocessable-entity-error.ts"
+        "../src/errors/api-unprocessable-entity-error.ts",
+        "../src/errors/external-messageable.ts"
       ],
       "../src/index.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -9638,16 +9622,6 @@
       ],
       "../node_modules/@types/jest/index.d.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/jest/ts3.1/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/process.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../node_modules/@types/jest/ts3.1/index.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/process.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -11539,30 +11513,32 @@
         "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/errors/api-bad-request-error.ts": [
-        "../src/errors/api-error.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/errors/external-messageable.ts"
       ],
       "../src/errors/api-conflict-error.ts": [
-        "../src/errors/api-error.ts"
-      ],
-      "../src/errors/api-error.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/errors/external-messageable.ts"
       ],
       "../src/errors/api-forbidden-error.ts": [
-        "../src/errors/api-error.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/errors/external-messageable.ts"
       ],
       "../src/errors/api-unauthorized-error.ts": [
-        "../src/errors/api-error.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/errors/external-messageable.ts"
       ],
       "../src/errors/api-unprocessable-entity-error.ts": [
-        "../src/errors/api-error.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/errors/external-messageable.ts"
       ],
       "../src/errors/index.ts": [
         "../src/errors/api-bad-request-error.ts",
         "../src/errors/api-conflict-error.ts",
-        "../src/errors/api-error.ts",
         "../src/errors/api-forbidden-error.ts",
         "../src/errors/api-unauthorized-error.ts",
-        "../src/errors/api-unprocessable-entity-error.ts"
+        "../src/errors/api-unprocessable-entity-error.ts",
+        "../src/errors/external-messageable.ts"
       ],
       "../src/index.ts": [
         "../src/constants.ts",
@@ -11825,7 +11801,6 @@
       "../node_modules/@types/istanbul-lib-report/index.d.ts",
       "../node_modules/@types/istanbul-reports/index.d.ts",
       "../node_modules/@types/jest/index.d.ts",
-      "../node_modules/@types/jest/ts3.1/index.d.ts",
       "../node_modules/@types/json-schema/index.d.ts",
       "../node_modules/@types/json5/index.d.ts",
       "../node_modules/@types/node/async_hooks.d.ts",
@@ -12019,10 +11994,10 @@
       "../src/decorators/size.decorator.ts",
       "../src/errors/api-bad-request-error.ts",
       "../src/errors/api-conflict-error.ts",
-      "../src/errors/api-error.ts",
       "../src/errors/api-forbidden-error.ts",
       "../src/errors/api-unauthorized-error.ts",
       "../src/errors/api-unprocessable-entity-error.ts",
+      "../src/errors/external-messageable.ts",
       "../src/errors/index.ts",
       "../src/index.ts",
       "../src/interfaces.ts",

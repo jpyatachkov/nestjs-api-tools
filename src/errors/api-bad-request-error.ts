@@ -1,19 +1,12 @@
-import {ApiError} from './api-error';
-import {HttpStatus} from '@nestjs/common';
+import {BadRequestException} from '@nestjs/common';
+import {ExternalMessageable} from './external-messageable';
 
 /**
  * HTTP 400 status code.
  */
-export abstract class ApiBadRequestError extends ApiError {
+export abstract class ApiBadRequestError extends BadRequestException implements ExternalMessageable {
 
-  protected constructor(
-    error: string,
-    message: string,
-  ) {
-    super(
-      error,
-      message,
-      HttpStatus.BAD_REQUEST,
-    );
+  public getExternalLogMessage(): string | any | null {
+    return null;
   }
 }
