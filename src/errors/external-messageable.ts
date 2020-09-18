@@ -7,5 +7,5 @@ export interface ExternalMessageable {
    * Message to log to external source.
    * If null returned, nothing needs to be logged.
    */
-  getExternalLogMessage(): string | any | null;
+  getExternalLogMessage(): any | null;
 }

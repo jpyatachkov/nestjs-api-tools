@@ -6,7 +6,7 @@ import {ForbiddenException} from '@nestjs/common';
  */
 export abstract class ApiForbiddenError extends ForbiddenException implements ExternalMessageable {
 
-  public getExternalLogMessage(): string | any | null {
+  public getExternalLogMessage(): any | null {
     return null;
   }
 }

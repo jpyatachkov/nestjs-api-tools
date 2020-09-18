@@ -1,5 +1,5 @@
 import { ExternalMessageable } from './external-messageable';
 import { UnauthorizedException } from '@nestjs/common';
 export declare abstract class ApiUnauthorizedError extends UnauthorizedException implements ExternalMessageable {
-    getExternalLogMessage(): string | any | null;
+    getExternalLogMessage(): any | null;
 }

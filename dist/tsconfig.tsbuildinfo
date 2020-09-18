@@ -1472,38 +1472,48 @@
         "affectsGlobalScope": false
       },
       "../src/errors/external-messageable.ts": {
-        "version": "9ebb8851443f78cbb7d6f7e4ecce3f59f3651dd7db36e76f16292eb349d0e1c4",
-        "signature": "fed03db478cdec4efb34c0a4c6e669912d02631560ca8ab454ddada0720cdc47",
+        "version": "5e188b1f5bc5d18a2a9ccdd8c775d19783e37371d846dd0279d03daa0dae6fa6",
+        "signature": "490c7b9a82fecf222096cad5ebaf3a4d4251fb5d43169b50879dbad6ac153e5a",
         "affectsGlobalScope": false
       },
       "../src/errors/api-bad-request-error.ts": {
-        "version": "49532d6d4044c72711726f2e03e0a36c349e9f381ad98e251d589dbdf2f3f3c3",
-        "signature": "052c154874b239817ab6ee6dc8035095473107eb6a6f31d70ca7869d0649f28c",
+        "version": "7f64fe6fb4fc447371c41f066a3955fa764965c37093cf6e40a44201433b4fd0",
+        "signature": "16b7a764b3fdce366ca08d3cc4b5c29d3e09fb9b5d0179b461c4510020a7cc31",
         "affectsGlobalScope": false
       },
       "../src/errors/api-conflict-error.ts": {
-        "version": "06d2e24fd7583016ee6c676d8deaea3789e233a6ed47bfa32f2aa73094c76573",
-        "signature": "14d9b62b217f596e91f7edc64ab37c28efb381affdc936a978cc37374bd3cf43",
+        "version": "d7f06b211934daef771095c96f77730c0d8b2b42aaff742bcbd172da21bc85ff",
+        "signature": "8ea24a9fae1e28ef95a8a79f940e6e7d1ed30f164b9be0f8fb7cfb89fbc8f9b7",
         "affectsGlobalScope": false
       },
       "../src/errors/api-forbidden-error.ts": {
-        "version": "a8be5ff9098bc8f16c6bb01d8d826572b86d45d1e17c9197e66a87cd9944039e",
-        "signature": "1db6340bfb37ee2563b7f8fa745e115b33cedc6912f42825963c28b3a6efbf40",
+        "version": "9f2f02d61d86db95686bb2fa32a581e5781cc356a4f236c81ab1302cc31b1e16",
+        "signature": "656941edb096150341a6e0588bd3a1bf8e265c32f2a1b426a051fff6041611ea",
+        "affectsGlobalScope": false
+      },
+      "../src/errors/api-internal-server-error.ts": {
+        "version": "46fe9e53ae7d12fec89461b30b7efafa5e55d74008844d150575924edcd6791c",
+        "signature": "f38515322adb4bc33197824967311a8f8120c7319ff7eff10f1e43fd9e40462c",
+        "affectsGlobalScope": false
+      },
+      "../src/errors/api-not-found-error.ts": {
+        "version": "1dd12f4baf31afdf25077d9571e6f97827b953648fb5cb7201d8fc3a60848fc3",
+        "signature": "4c803074b96e35ddc7c583dfaaca8bcdf5462419ac9dc0c17996156b37508417",
         "affectsGlobalScope": false
       },
       "../src/errors/api-unauthorized-error.ts": {
-        "version": "c1c2d36b70369981028598a2f105cb474e5e627dd290cf04d7fdf1434309957d",
-        "signature": "00fe29ccd849d79f12ebd9802428f2646e1b64bb90ff3a8076f6b9ce2cd01dab",
+        "version": "b717d0b6bcc565e0600b226615193df89ec41d3c92b5a773b51e604263e3e065",
+        "signature": "25f440ac54c874a42da8a362b9479d51f2b7a1885e97bf719d395e5e6392f213",
         "affectsGlobalScope": false
       },
       "../src/errors/api-unprocessable-entity-error.ts": {
-        "version": "fb2193fa06d287a8ae48d10ac7fdfb1966cefdc561a5d501b584d4e911e1490f",
-        "signature": "832a218847f89c6305fff1f0007f40097545198356569dd78df45408d6df5fbe",
+        "version": "8a3311dcb32946bf6a41fe29ca4a4bfc0cfe5ff8f3ac36273f53041d6e30d32d",
+        "signature": "a93af553447ed929dd4a5b63ca12f463eb5216aa66cb56c7e643c79bb184d2fc",
         "affectsGlobalScope": false
       },
       "../src/errors/index.ts": {
-        "version": "6bf6a93eaecc4c89139bf46d3465e11ae85f6ed6cb964dcfd983d251f74b00c5",
-        "signature": "6bf6a93eaecc4c89139bf46d3465e11ae85f6ed6cb964dcfd983d251f74b00c5",
+        "version": "457f43ff7cd04d11bd7a8fa420f7a6d8a77eb2b9cfb75c4c20fcce01b03b7225",
+        "signature": "457f43ff7cd04d11bd7a8fa420f7a6d8a77eb2b9cfb75c4c20fcce01b03b7225",
         "affectsGlobalScope": false
       },
       "../src/pipes/parse-date.pipe.ts": {
@@ -6864,6 +6874,28 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/errors/external-messageable.ts"
       ],
+      "../src/errors/api-internal-server-error.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/errors/external-messageable.ts"
+      ],
+      "../src/errors/api-not-found-error.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/errors/external-messageable.ts"
+      ],
       "../src/errors/api-unauthorized-error.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -6906,6 +6938,8 @@
         "../src/errors/api-bad-request-error.ts",
         "../src/errors/api-conflict-error.ts",
         "../src/errors/api-forbidden-error.ts",
+        "../src/errors/api-internal-server-error.ts",
+        "../src/errors/api-not-found-error.ts",
         "../src/errors/api-unauthorized-error.ts",
         "../src/errors/api-unprocessable-entity-error.ts",
         "../src/errors/external-messageable.ts"
@@ -11524,6 +11558,14 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/errors/external-messageable.ts"
       ],
+      "../src/errors/api-internal-server-error.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/errors/external-messageable.ts"
+      ],
+      "../src/errors/api-not-found-error.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/errors/external-messageable.ts"
+      ],
       "../src/errors/api-unauthorized-error.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/errors/external-messageable.ts"
@@ -11536,6 +11578,8 @@
         "../src/errors/api-bad-request-error.ts",
         "../src/errors/api-conflict-error.ts",
         "../src/errors/api-forbidden-error.ts",
+        "../src/errors/api-internal-server-error.ts",
+        "../src/errors/api-not-found-error.ts",
         "../src/errors/api-unauthorized-error.ts",
         "../src/errors/api-unprocessable-entity-error.ts",
         "../src/errors/external-messageable.ts"
@@ -11995,6 +12039,8 @@
       "../src/errors/api-bad-request-error.ts",
       "../src/errors/api-conflict-error.ts",
       "../src/errors/api-forbidden-error.ts",
+      "../src/errors/api-internal-server-error.ts",
+      "../src/errors/api-not-found-error.ts",
       "../src/errors/api-unauthorized-error.ts",
       "../src/errors/api-unprocessable-entity-error.ts",
       "../src/errors/external-messageable.ts",

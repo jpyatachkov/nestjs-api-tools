@@ -13,6 +13,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./api-bad-request-error"), exports);
 __exportStar(require("./api-conflict-error"), exports);
 __exportStar(require("./api-forbidden-error"), exports);
+__exportStar(require("./api-internal-server-error"), exports);
+__exportStar(require("./api-not-found-error"), exports);
 __exportStar(require("./api-unauthorized-error"), exports);
 __exportStar(require("./api-unprocessable-entity-error"), exports);
 __exportStar(require("./external-messageable"), exports);

@@ -6,7 +6,7 @@ import {UnauthorizedException} from '@nestjs/common';
  */
 export abstract class ApiUnauthorizedError extends UnauthorizedException implements ExternalMessageable {
 
-  public getExternalLogMessage(): string | any | null {
+  public getExternalLogMessage(): any | null {
     return null;
   }
 }

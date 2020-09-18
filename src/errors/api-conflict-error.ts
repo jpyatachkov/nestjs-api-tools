@@ -6,7 +6,7 @@ import {ExternalMessageable} from './external-messageable';
  */
 export abstract class ApiConflictError extends ConflictException implements ExternalMessageable {
 
-  public getExternalLogMessage(): string | any | null {
+  public getExternalLogMessage(): any | null {
     return null;
   }
 }
