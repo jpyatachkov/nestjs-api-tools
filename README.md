@@ -9,9 +9,9 @@ Russian language used in string default values because of local type of developm
 
 The set of tools is the following:
 
-* [Decorators](#decorators) - [@nestjs/swagger](https://docs.nestjs.com/openapi/introduction) wrappers and validation, pagination, serialization wrappers.
+* [Decorators](#decorators) - [@nestjs/swagger](https://docs.nestjs.com/openapi/introduction) wrappers and pagination, serialization wrappers.
 * [Errors](#errors) - exception classes to throw from API injectables.
-* [Pipes](#pipes) - extended validation pipe with error translation, date parsing pipe.
+* [Pipes](#pipes) - date parsing pipe.
 * [Services](#services) - injectables for utility operations, for example, sending messages (error messages least) to Discord channel.
 * [Utils](#utils) - set of helpful functions for string, object transformations and so on.
 
@@ -25,19 +25,6 @@ so why should you do it in multiple pieces of code manually?). To sum up, this s
 parameter decorators (such as page, size, offset, limit). To see full set of decorators available, please refer to the [decorators/api module](src/decorators/api) - the file names speak for themselves.
 
 Utility decorators do some helpful operations such as wrapping request parameters.
-
-#### @BodyWithValidation
-
-Uses `ValidationPipe` with built-in whitelisting and errors i18n. Example:
-
-```ts
-@Controller()
-export class ExampleController {
-  
-  public async foo(@BodyWithValidation() data: SomeDTO) {  
-  }
-}
-```
 
 #### @Limit
 
@@ -170,7 +157,7 @@ Exception classes that can be used to transfer errors from business logic to the
 
 ### Pipes
 
-Couple of useful pipes for data transformation and validation.
+Couple of useful pipes for data transformations.
 
 #### ParseDatePipe
 
@@ -182,26 +169,6 @@ export class ExampleController {
   
   public async foo(@Param('dateFrom', ParseDatePipe) dateFrom: Date) {  
   }
-}
-```
-
-#### ValidationPipe
-
-Re-written NestJS validation pipe. The main difference is that the `ValidationPipe` from this package tries to translate all class-validator messages.
-So, this is the way to provide custom messages on many languages without uncomfortable data transformations.
-
-To make it work, please, provide its configuration options through NestJS DI:
-
-```ts
-import {VALIDATION_PIPE_OPTIONS} from './constants';
-
-//..
-
-{
-  provide: VALIDATION_PIPE_OPTIONS,
-  useValue: {
-    depth: 10, // Maximum depth of recursion while JSON error rendering.
-  },
 }
 ```
 
