@@ -27,7 +27,7 @@ let DiscordService = class DiscordService {
         if (!this.hook) {
             return null;
         }
-        const title = httpMethod && httpPath ? `${httpMethod} ${httpPath} ` : '' + `ERROR: ${alias}${this.options.debug ? ' (DEBUG)' : ''}`;
+        const title = (httpMethod && httpPath ? `${httpMethod} ${httpPath} ` : '') + `ERROR: ${alias}${this.options.debug ? ' (DEBUG)' : ''}`;
         const errorMessage = new discord_js_1.MessageEmbed()
             .setColor(this.options.debug ? '#0000FF' : '#FF0000')
             .setTitle(title)

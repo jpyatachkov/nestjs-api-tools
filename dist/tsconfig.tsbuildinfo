@@ -1807,7 +1807,7 @@
         "affectsGlobalScope": true
       },
       "../src/services/discord.service.ts": {
-        "version": "56f9b84ef3c62854c73a4618057760ceb3aa5d75997884133b5e5f5c344e9c58",
+        "version": "4dfe814fa13d0a4fad91f8a8230361f66736cb525b3cbf743e32d5631db66fba",
         "signature": "40ba390baad696b2d48edef5231ff7979a33590d931c4da1b2c3aeb337b64342",
         "affectsGlobalScope": false
       },

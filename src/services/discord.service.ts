@@ -46,7 +46,7 @@ export class DiscordService {
       return null;
     }
 
-    const title = httpMethod && httpPath ? `${httpMethod} ${httpPath} ` : '' + `ERROR: ${alias}${this.options.debug ? ' (DEBUG)' : ''}`;
+    const title = (httpMethod && httpPath ? `${httpMethod} ${httpPath} ` : '') + `ERROR: ${alias}${this.options.debug ? ' (DEBUG)' : ''}`;
 
     const errorMessage = new MessageEmbed()
       .setColor(this.options.debug ? '#0000FF' : '#FF0000')
