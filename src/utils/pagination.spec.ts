@@ -11,7 +11,7 @@ describe('pageAndSizeToSkipAndTake', () => {
     [1, -1, 0, DEFAULT_SIZE],
     [1, null, 0, null],
   ])('page %o, size %o, skip %o, take %o', (page: number, size: number, skip: number, take: number) => {
-    it('должна преобразовывать номер страницы и ее размер к offset и limit', () => {
+    it('should transform page and size to offset and limit', () => {
       const [actualSkip, actualTake] = pageAndSizeToSkipAndTake(page, size, DEFAULT_SIZE);
 
       expect(actualSkip).toEqual(skip);

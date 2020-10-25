@@ -1,1 +1,1 @@
-{"version":3,"file":"api-not-found-error.js","sourceRoot":"","sources":["../../src/errors/api-not-found-error.ts"],"names":[],"mappings":";;;AACA,2CAAiD;AAEjD,MAAa,gBAAiB,SAAQ,0BAAiB;IAErD,qBAAqB;QACnB,OAAO,IAAI,CAAC;IACd,CAAC;CACF;AALD,4CAKC"}
+{"version":3,"file":"api-not-found-error.js","sourceRoot":"","sources":["../../src/errors/api-not-found-error.ts"],"names":[],"mappings":";;;AACA,2CAAiD;AAEjD,MAAa,gBAAiB,SAAQ,0BAAiB;IAE9C,qBAAqB;QAC1B,OAAO,IAAI,CAAC;IACd,CAAC;CACF;AALD,4CAKC"}

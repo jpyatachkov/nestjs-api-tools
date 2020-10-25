@@ -1,0 +1,1 @@
+{"version":3,"file":"timestamp.decorator.js","sourceRoot":"","sources":["../../../src/decorators/orm/timestamp.decorator.ts"],"names":[],"mappings":";;;AAAA,qCAA8C;AAE9C,qDAAuD;AAM1C,QAAA,SAAS,GAAG,CAAC,OAAuB,EAAqB,EAAE,CAAC,gBAAM,CAAC;IAC9E,WAAW,EAAE,IAAI,kCAAmB,EAAE;IACtC,IAAI,EAAE,0BAA0B;IAChC,GAAG,CAAC,OAAO,IAAI,EAAE,CAAC;CACnB,CAAC,CAAC"}

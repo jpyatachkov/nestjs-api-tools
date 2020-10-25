@@ -1,0 +1,1 @@
+{"version":3,"file":"jsonb.decorator.js","sourceRoot":"","sources":["../../../src/decorators/orm/jsonb.decorator.ts"],"names":[],"mappings":";;;AAAA,qCAA8C;AAMjC,QAAA,KAAK,GAAG,CAAC,OAAuB,EAAqB,EAAE,CAAC,gBAAM,CAAC;IAC1E,IAAI,EAAE,OAAO;IACb,OAAO,EAAE,EAAE;IACX,GAAG,CAAC,OAAO,IAAI,EAAE,CAAC;CACnB,CAAC,CAAC"}

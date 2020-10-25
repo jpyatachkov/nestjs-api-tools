@@ -3,7 +3,7 @@ import {InternalServerErrorException} from '@nestjs/common';
 
 export class ApiInternalServerError extends InternalServerErrorException implements ExternalMessageable {
 
-  getExternalLogMessage(): any | null {
+  public getExternalLogMessage(): any | null {
     return null;
   }
 }

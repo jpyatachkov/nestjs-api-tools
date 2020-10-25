@@ -13,6 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./api"), exports);
 __exportStar(require("./limit.decorator"), exports);
 __exportStar(require("./offset.decorator"), exports);
+__exportStar(require("./orm"), exports);
 __exportStar(require("./page.decorator"), exports);
 __exportStar(require("./serialization.decorator"), exports);
 __exportStar(require("./size.decorator"), exports);
