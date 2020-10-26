@@ -17,4 +17,6 @@ __exportStar(require("./orm"), exports);
 __exportStar(require("./page.decorator"), exports);
 __exportStar(require("./serialization.decorator"), exports);
 __exportStar(require("./size.decorator"), exports);
+__exportStar(require("./transform"), exports);
+__exportStar(require("./validation"), exports);
 //# sourceMappingURL=index.js.map
