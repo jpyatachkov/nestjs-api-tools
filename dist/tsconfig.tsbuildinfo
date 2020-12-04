@@ -3841,8 +3841,13 @@
         "signature": "088d420a09a36d241f1ddbdcb553951c02ef0844014727a29712d2ced57edd22",
         "affectsGlobalScope": false
       },
+      "../node_modules/ip-range-check/index.d.ts": {
+        "version": "3a2dddaae0717fda084a90a12568cc4bf4cece98d9cfb194697ce4e724f46baa",
+        "signature": "3a2dddaae0717fda084a90a12568cc4bf4cece98d9cfb194697ce4e724f46baa",
+        "affectsGlobalScope": true
+      },
       "../src/guards/ip-allowlist.guard.ts": {
-        "version": "06b109c5a56a6f30454401b148bd74a1887f7eef37911a721a1089dc36d813a2",
+        "version": "dad4bab4a9513122375d43d2a9590c36e1688750b7575d91ef92d9a97e9751ee",
         "signature": "7545b5a00516871f053b8c53224f3d9e11e1f8135021834c933bdd9a42a964cd",
         "affectsGlobalScope": false
       },
@@ -4132,7 +4137,7 @@
         "affectsGlobalScope": false
       },
       "../src/guards/ip-allowlist.guard.spec.ts": {
-        "version": "6d13f373b6cd535683aa0c3a736865c3bc687e59861edf326d8d1e37452ad759",
+        "version": "7d9a72dc4c39d84d6c8b460c9fdd76d1ecaf37b16f6ee78a3873f1217cce0071",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -7420,6 +7425,7 @@
       "../src/guards/ip-allowlist.guard.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/express/index.d.ts",
+        "../node_modules/ip-range-check/index.d.ts",
         "../src/constants.ts"
       ],
       "../src/index.ts": [
@@ -13780,6 +13786,7 @@
       "../node_modules/class-validator/types/validation/validatorconstraintinterface.d.ts",
       "../node_modules/class-validator/types/validation/validatoroptions.d.ts",
       "../node_modules/discord.js/typings/index.d.ts",
+      "../node_modules/ip-range-check/index.d.ts",
       "../node_modules/node-cache/index.d.ts",
       "../node_modules/reflect-metadata/index.d.ts",
       "../node_modules/rxjs/index.d.ts",

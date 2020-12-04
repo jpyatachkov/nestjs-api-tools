@@ -2,6 +2,7 @@ import {CanActivate, ExecutionContext, Inject, Injectable, Logger} from '@nestjs
 
 import {IP_ALLOWLIST_GUARD_OPTIONS} from '../constants';
 import {Request} from 'express';
+import ipRangeCheck from 'ip-range-check';
 
 export interface IpAllowlistGuardOptions {
   debug?: boolean;
@@ -29,13 +30,13 @@ export class IpAllowlistGuard implements CanActivate {
 
     this.logger.error(`IP ${ip} TRIES TO ACCESS ${req.path}`);
 
-    if (!this.options.allowedIps.includes(ip)) {
-      this.logger.error(`IP ${ip} ACCESS TO ${req.path} DENIED`);
-      return false;
-    } else {
+    if (this.options.allowedIps?.length && ipRangeCheck(ip, this.options.allowedIps)) {
       this.logger.error(`IP ${ip} ACCESS TO ${req.path} ALLOWED`);
+      return true;
+    } else {
+      this.logger.error(`IP ${ip} ACCESS TO ${req.path} DENIED`);
     }
 
-    return true;
+    return false;
   }
 }

@@ -49,7 +49,7 @@ describe('IpAllowlistGuard', () => {
       } as any;
     });
 
-    it('should do nothing if debug is true', () => {
+    it('should do nothing and return true if debug is true', () => {
       (guard as any).options.debug = true;
       expect(guard.canActivate(context)).toBeTruthy();
       expect(context.switchToHttp).not.toBeCalled();
@@ -76,6 +76,15 @@ describe('IpAllowlistGuard', () => {
       (guard as any).options = {
         debug: false,
         allowedIps: ['127.0.0.1', '197.0.10.15', request.ip],
+      };
+      expect(guard.canActivate(context)).toBeTruthy();
+    });
+
+    it('should return true if IP in one of allowlist ranges', () => {
+      request.ip = '178.176.72.59';
+      (guard as any).options = {
+        debug: false,
+        allowedIps: ['127.0.0.1', '197.0.10.15', '178.176.72.0/24'],
       };
       expect(guard.canActivate(context)).toBeTruthy();
     });

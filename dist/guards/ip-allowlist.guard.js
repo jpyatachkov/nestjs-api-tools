@@ -11,31 +11,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 var IpAllowlistGuard_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.IpAllowlistGuard = void 0;
 const common_1 = require("@nestjs/common");
 const constants_1 = require("../constants");
+const ip_range_check_1 = __importDefault(require("ip-range-check"));
 let IpAllowlistGuard = IpAllowlistGuard_1 = class IpAllowlistGuard {
     constructor(options) {
         this.options = options;
         this.logger = new common_1.Logger(IpAllowlistGuard_1.name);
     }
     canActivate(context) {
+        var _a;
         if (this.options.debug) {
             return true;
         }
         const req = context.switchToHttp().getRequest();
         const ip = req.ip;
         this.logger.error(`IP ${ip} TRIES TO ACCESS ${req.path}`);
-        if (!this.options.allowedIps.includes(ip)) {
-            this.logger.error(`IP ${ip} ACCESS TO ${req.path} DENIED`);
-            return false;
+        if (((_a = this.options.allowedIps) === null || _a === void 0 ? void 0 : _a.length) && ip_range_check_1.default(ip, this.options.allowedIps)) {
+            this.logger.error(`IP ${ip} ACCESS TO ${req.path} ALLOWED`);
+            return true;
         }
         else {
-            this.logger.error(`IP ${ip} ACCESS TO ${req.path} ALLOWED`);
+            this.logger.error(`IP ${ip} ACCESS TO ${req.path} DENIED`);
         }
-        return true;
+        return false;
     }
 };
 IpAllowlistGuard = IpAllowlistGuard_1 = __decorate([
