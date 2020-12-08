@@ -25,7 +25,10 @@ describe('DateTimeTransformer', () => {
 
     describe.each([
       '2020-06-20 12:00:00+03',
-      '2020-06-20 12:00:00+3',
+      '2020-06-20T12:00:00Z',
+      '2020-06-20',
+      '2020-06-20 12:00',
+      '2018-11-07T00:25:00.073876Z',
     ])('date string %o', (dateString: string) => {
       it('should return string as-is if its format is valid', () => {
         expect(transformer.to(dateString)).toEqual(dateString);
@@ -34,9 +37,7 @@ describe('DateTimeTransformer', () => {
 
     describe.each([
       'sf,ng',
-      '2020-06-20T12:00:00Z',
-      '2020-06-20',
-      '2020-06-20 12:00',
+      '2020-06-20 12:00:00+3',
     ])('date string %o', (dateString: string) => {
       it('should return undefined if passed string format is invalid', () => {
         expect(transformer.to(dateString)).toBeUndefined();
