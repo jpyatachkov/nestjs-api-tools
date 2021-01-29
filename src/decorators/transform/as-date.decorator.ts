@@ -2,7 +2,7 @@ import {DateTime} from 'luxon';
 import {Transform} from 'class-transformer';
 import {TransformDecoratorType} from '../../types';
 
-export const transformAsDate = (v: DateTime): string | null => v?.toISODate() || null;
+export const transformAsDate = (v: DateTime): string | null => typeof v?.toISODate === 'function' ? v.toISODate() : null;
 
 /**
  * Transforms luxon.DateTime to ISO date string.
