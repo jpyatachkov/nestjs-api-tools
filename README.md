@@ -3,17 +3,21 @@
 This project provides a set of tools and wrappers for convenient API development. Since convenience is a controversial issue, using this package may not increase your development performance.
 The main aim of creation of such a package is to integrate and isolate all utilities commonly used by me in recent projects.
 
-Russian language used in string default values because of local type of development - all APIs must communicate with user at least in Russian, i18n is desirable but not required. 
+Russian language used in string default values because of local type of development - all APIs must communicate with user at least in Russian, i18n is desirable but not required.
+
+## IMPORTANT NOTES
+
+Due to breaking change in [`class-transformer` package from v 0.3.2](https://github.com/typestack/class-transformer) it's worth depending from 0.3.1 when using this package, although it has fallbacks.
 
 ## Tools
 
 The set of tools is the following:
 
-* [Decorators](#decorators) - [@nestjs/swagger](https://docs.nestjs.com/openapi/introduction) wrappers and pagination, serialization wrappers.
-* [Errors](#errors) - exception classes to throw from API injectables.
-* [Pipes](#pipes) - date parsing pipe.
-* [Services](#services) - injectables for utility operations, for example, sending messages (error messages least) to Discord channel.
-* [Utils](#utils) - set of helpful functions for string, object transformations and so on.
+- [Decorators](#decorators) - [@nestjs/swagger](https://docs.nestjs.com/openapi/introduction) wrappers and pagination, serialization wrappers.
+- [Errors](#errors) - exception classes to throw from API injectables.
+- [Pipes](#pipes) - date parsing pipe.
+- [Services](#services) - injectables for utility operations, for example, sending messages (error messages least) to Discord channel.
+- [Utils](#utils) - set of helpful functions for string, object transformations and so on.
 
 ### Decorators
 
@@ -33,9 +37,7 @@ Limit query parameter - used to find and parse as number the query parameter con
 ```ts
 @Controller()
 export class ExampleController {
-  
-  public async foo(@Limit({defaultLimit: 25}) limit: number) {  
-  }
+  public async foo(@Limit({ defaultLimit: 25 }) limit: number) {}
 }
 ```
 
@@ -52,13 +54,11 @@ export interface LimitOptions {
 #### @Offset
 
 Offset query parameter - used to find and parse as number the query parameter containing pagination offset. Example:
-                         
+
 ```ts
 @Controller()
 export class ExampleController {
-
-  public async foo(@Offset({defaultOffset: 0}) offset: number) {  
-  }
+  public async foo(@Offset({ defaultOffset: 0 }) offset: number) {}
 }
 ```
 
@@ -74,13 +74,11 @@ export interface OffsetOptions {
 #### @Page
 
 Page (**from 1**) query parameter - used to find and parse as number the query parameter containing page. Example:
-                         
+
 ```ts
 @Controller()
 export class ExampleController {
-
-  public async foo(@Page({defaultPage: 1}) page: number) {  
-  }
+  public async foo(@Page({ defaultPage: 1 }) page: number) {}
 }
 ```
 
@@ -96,23 +94,21 @@ export interface PageOptions {
 #### @Serialization
 
 The decorator which enforces NestJS to use [class-transformer](https://github.com/typestack/class-transformer) when returning objects from
-controllers. Example: 
+controllers. Example:
 
 ```ts
 @Controller()
 @Serialization()
-export class ExampleController {
-}
+export class ExampleController {}
 ```
 
 **Pay attention** that the class-transformer package does not serialize plain objects as they don't have metadata, so when you have
 
 ```ts
 export class User {
-
   @ApiProperty()
   public nick: string;
-    
+
   @Exclude()
   public password: string;
 }
@@ -122,7 +118,7 @@ and do something like
 
 ```ts
 const user = new User();
-const transformed = {...user};
+const transformed = { ...user };
 ```
 
 You loose all metadata, thus class-transformer will not work correctly.
@@ -134,9 +130,7 @@ Size query parameter - used to find and parse as number the query parameter cont
 ```ts
 @Controller()
 export class ExampleController {
-  
-  public async foo(@Size({defaultSize: 25}) size: number) {  
-  }
+  public async foo(@Size({ defaultSize: 25 }) size: number) {}
 }
 ```
 
@@ -161,14 +155,12 @@ Couple of useful pipes for data transformations.
 
 #### ParseDatePipe
 
-Checks whether given string can be treated as date, if so, creates `Date` from it, otherwise returns `null`. Example: 
+Checks whether given string can be treated as date, if so, creates `Date` from it, otherwise returns `null`. Example:
 
 ```ts
 @Controller()
 export class ExampleController {
-  
-  public async foo(@Param('dateFrom', ParseDatePipe) dateFrom: Date) {  
-  }
+  public async foo(@Param("dateFrom", ParseDatePipe) dateFrom: Date) {}
 }
 ```
 
@@ -219,7 +211,7 @@ import {DISCORD_SERVICE_OPTIONS} from './constants';
 Use this service as following:
 
 ```ts
-import {nanoid} from 'nanoid';
+import { nanoid } from "nanoid";
 
 // This token will help to match Discord logs with text logs.
 // You should generate it manually every time you need to send something to Discord to pass it in all parts of your logging system.
@@ -244,11 +236,11 @@ const logToken = nanoid();
 const context = {};
 
 this.discordService.emitError(
-    'ERROR_ALIAS', 
-    logToken,
-    'POST', // HTTP method. You can set it to null if no method used (it's not HTTP service) or the method does not matter.
-    '/api/v1/example', // HTTP path. Also nullish.
-    context,
+  "ERROR_ALIAS",
+  logToken,
+  "POST", // HTTP method. You can set it to null if no method used (it's not HTTP service) or the method does not matter.
+  "/api/v1/example", // HTTP path. Also nullish.
+  context
 );
 ```
 
@@ -260,7 +252,7 @@ Set of functions for transformations.
 
 Module to transform between different pagination representations. For example:
 
-* `pageAndSizeToSkipAndTake` - transforms page and size to skip and take (SQL offset and limit synonyms).
+- `pageAndSizeToSkipAndTake` - transforms page and size to skip and take (SQL offset and limit synonyms).
 
 #### replacer
 
@@ -270,6 +262,6 @@ Module to remove unwanted properties from objects. Useful for logging - some pro
 
 Strings transformations. For example:
 
-* `capitalize` - makes first letter in string capital.
-* `joinStrings` - joins array of strings with the delimiter passed and **ensures the delimiter not to repeat on boundaries**. For instance, `joinStrings('/', 'a/', '/b')` will return `a/b`.
-* `isEmpty` - checks whether string has zero length excluding spaces.
+- `capitalize` - makes first letter in string capital.
+- `joinStrings` - joins array of strings with the delimiter passed and **ensures the delimiter not to repeat on boundaries**. For instance, `joinStrings('/', 'a/', '/b')` will return `a/b`.
+- `isEmpty` - checks whether string has zero length excluding spaces.

@@ -3,8 +3,8 @@ import {Transform} from 'class-transformer';
 import {TransformDecoratorType} from '../../types';
 import {parseDateTime} from '../../utils';
 
-export const transformAsDate = (v: DateTime): string | null => {
-  const parsed = parseDateTime(v);
+export const transformAsDate = (v: DateTime | unknown): string | null => {
+  const parsed = parseDateTime((v as any)?.value ?? v);
   return typeof parsed?.toISODate === 'function' ? parsed.toISODate() : null;
 };
 
