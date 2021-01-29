@@ -10,9 +10,14 @@ describe('AsDate', () => {
     it('should return null if object cannot be transformed to ISO-string', () => {
         expect(as_date_decorator_1.transformAsDate(null)).toBeNull();
     });
-    it('should return ISO-string', () => {
-        const v = luxon_1.DateTime.fromJSDate(faker_1.default.date.past());
-        expect(as_date_decorator_1.transformAsDate(v)).toEqual(v.toISODate());
+    describe.each([
+        luxon_1.DateTime.fromJSDate(faker_1.default.date.past()),
+        '2021-01-26T11:12:54.000+03:00',
+        '2020-12-03 21:05:51+00',
+    ])('v: %s', (v) => {
+        it('should return ISO-string', () => {
+            expect(as_date_decorator_1.transformAsDate(v)).toMatch(/^\d{4}-[01]\d-[0-3]\d$/);
+        });
     });
 });
 //# sourceMappingURL=as-date.decorator.spec.js.map

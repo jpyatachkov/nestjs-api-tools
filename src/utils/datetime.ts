@@ -13,10 +13,15 @@ export function parseDateTime(v: string | Date | DateTime | number | null | unde
     return v;
   }
 
-  const fromISO = DateTime.fromISO(v as string);
+  if (typeof v === 'string') {
+    // To parse PostgreSQL datetime with format "2020-12-03 21:05:51+00".
+    const withoutSpaces = v.replace(' ', 'T');
 
-  if (fromISO.isValid) {
-    return fromISO;
+    const fromISO = DateTime.fromISO(withoutSpaces);
+
+    if (fromISO.isValid) {
+      return fromISO;
+    }
   }
 
   const fromJS = DateTime.fromJSDate(v as Date);

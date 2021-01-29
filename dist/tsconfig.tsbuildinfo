@@ -2767,7 +2767,7 @@
         "affectsGlobalScope": false
       },
       "../src/utils/datetime.ts": {
-        "version": "b652d967f47933cf9cf563ed0e215c5be6ea4d2f5d802f680877020aedfbc295",
+        "version": "921a91a731d5255ed8c4ee368e957c0292d6f2921e6006ac03d1f519b3329e01",
         "signature": "6d5c6f8156f475862da03447ce8c4817894cbb6e80f1cb15fb4ae53c2ae97182",
         "affectsGlobalScope": false
       },
@@ -2912,12 +2912,12 @@
         "affectsGlobalScope": false
       },
       "../src/decorators/transform/as-date.decorator.ts": {
-        "version": "4707edb970cb26e5bb0d80f7cbc1dd1866b7c1bc388c8423cde22761e09001fb",
+        "version": "0df5aa9d4d215a400ff839bce0ee7d4832572ae44adaef09d451c5f83b43dc3f",
         "signature": "7fd45eb68b9349498bdc095f3a9ea4f3bda51039b32c1afbdc774ce6b6aab0b8",
         "affectsGlobalScope": false
       },
       "../src/decorators/transform/as-date-time.decorator.ts": {
-        "version": "41f7c1402391963e4bb7cd1f8a9d16f57afaae8b53bb9b1416077190b362ab63",
+        "version": "1d6fb4e8f6c1bb2f11ee42787aed60730fa8b0da0b656c94afc6cfa416f963df",
         "signature": "162ad45aa815421eef96839fd3fe3252053de15f16af3a5b0c88e39f614b7f16",
         "affectsGlobalScope": false
       },
@@ -4022,12 +4022,12 @@
         "affectsGlobalScope": true
       },
       "../src/decorators/transform/as-date-time.decorator.spec.ts": {
-        "version": "89d6eb2158a4bc4173a7f1d182360bfa2b86bc2767a9ea400b26f7e409fa3216",
+        "version": "5dc267dbe4a8453f7bdffb5f9a1124a6ba830e4ecc32d8789dce5aa11ff6e26b",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
       "../src/decorators/transform/as-date.decorator.spec.ts": {
-        "version": "177073e766d7b78ed64eefab53915533c02e344753247fc1ab1eb54d51ce0699",
+        "version": "51d5246dba154c87421443a6287ce67e02cea04e33a86c172172e369dd9e1a9e",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -4282,7 +4282,7 @@
         "affectsGlobalScope": false
       },
       "../src/utils/datetime.spec.ts": {
-        "version": "63b0a0a52fd64b396c184342bc2b1f7f210bd329b7cd38e7b76be6c8976e910e",
+        "version": "ee6669221a203f378f248c9c618d576f59941f44f0b933828fae44479c5d1170",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -7680,7 +7680,8 @@
       "../src/decorators/transform/as-date-time.decorator.ts": [
         "../node_modules/@types/luxon/index.d.ts",
         "../node_modules/class-transformer/index.d.ts",
-        "../src/types.ts"
+        "../src/types.ts",
+        "../src/utils/index.ts"
       ],
       "../src/decorators/transform/as-date.decorator.spec.ts": [
         "../node_modules/@types/faker/index.d.ts",
@@ -7690,7 +7691,8 @@
       "../src/decorators/transform/as-date.decorator.ts": [
         "../node_modules/@types/luxon/index.d.ts",
         "../node_modules/class-transformer/index.d.ts",
-        "../src/types.ts"
+        "../src/types.ts",
+        "../src/utils/index.ts"
       ],
       "../src/decorators/transform/index.ts": [
         "../src/decorators/transform/as-date-time.decorator.ts",

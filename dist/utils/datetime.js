@@ -9,9 +9,12 @@ function parseDateTime(v) {
     if (v instanceof luxon_1.DateTime) {
         return v;
     }
-    const fromISO = luxon_1.DateTime.fromISO(v);
-    if (fromISO.isValid) {
-        return fromISO;
+    if (typeof v === 'string') {
+        const withoutSpaces = v.replace(' ', 'T');
+        const fromISO = luxon_1.DateTime.fromISO(withoutSpaces);
+        if (fromISO.isValid) {
+            return fromISO;
+        }
     }
     const fromJS = luxon_1.DateTime.fromJSDate(v);
     if (fromJS.isValid) {

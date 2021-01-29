@@ -9,6 +9,8 @@ describe('datetime', () => {
             undefined,
             '11.01.1998',
             '01/09/2001',
+            '2020-12-03   21:05',
+            '2020-12-03 21 : 05',
         ])('v = %o', (v) => {
             it('shouls return null if input cannot be parsed as luxon.DateTime', () => {
                 expect(datetime_1.parseDateTime(v)).toBeNull();
@@ -16,6 +18,9 @@ describe('datetime', () => {
         });
         describe.each([
             '2020-01-01',
+            '2021-01-26T11:12:54.000+03:00',
+            '2021-01-26T11:12:54',
+            '2020-12-03 21:05:51+00',
             new Date(),
             1600275033,
             1600275033000,

@@ -1,8 +1,12 @@
 import {DateTime} from 'luxon';
 import {Transform} from 'class-transformer';
 import {TransformDecoratorType} from '../../types';
+import {parseDateTime} from '../../utils';
 
-export const transformAsDate = (v: DateTime): string | null => typeof v?.toISODate === 'function' ? v.toISODate() : null;
+export const transformAsDate = (v: DateTime): string | null => {
+  const parsed = parseDateTime(v);
+  return typeof parsed?.toISODate === 'function' ? parsed.toISODate() : null;
+};
 
 /**
  * Transforms luxon.DateTime to ISO date string.
