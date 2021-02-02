@@ -15,6 +15,7 @@ __exportStar(require("./decorators"), exports);
 __exportStar(require("./errors"), exports);
 __exportStar(require("./guards"), exports);
 __exportStar(require("./interfaces"), exports);
+__exportStar(require("./operators"), exports);
 __exportStar(require("./pipes"), exports);
 __exportStar(require("./services"), exports);
 __exportStar(require("./types"), exports);
