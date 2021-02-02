@@ -3007,7 +3007,7 @@
         "affectsGlobalScope": false
       },
       "../src/decorators/validation/body-with-trim.decorator.ts": {
-        "version": "b90c46bf3352fc8e0d108be83e23062c2032f42aee061339ad5c3d98a89b758e",
+        "version": "64668563be1fcbdcbcdee2c207fdb4ed1048069238dd0ebec207a633ae6fe424",
         "signature": "e6b3efc5c06cfc036635d7a3c2e714a589ecc604d0be6912d0d8b3701e65ac65",
         "affectsGlobalScope": false
       },
