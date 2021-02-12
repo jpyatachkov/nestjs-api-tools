@@ -8,5 +8,6 @@ The set of tools available consists of the following:
 - [Operators](./operators.md) - operator functions for data transformation.
 - [Pipes](./pipes.md) - date parsing and transforming pipes.
 - [Services](./services.md) - injectables for utility operations, for example, sending messages (error messages least) to Discord channel.
+- [Settings](./setings.md) - DTOs for settings placement.
 - [Transformers](./transformers.md) - TypeORM value transformers.
 - [Utils](./utils.md) - set of helpful functions for string, object transformations and so on.

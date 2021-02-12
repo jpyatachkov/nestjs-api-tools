@@ -4536,9 +4536,24 @@
         "signature": "de82a6002c33f209e07bf00d29b1f706820c98e58b756bb41f07f49b8e6ccf46",
         "affectsGlobalScope": false
       },
+      "../src/settings/cache.ts": {
+        "version": "800a3103e043f23cfe5f8ab124247a16b7c6149285abb4d283843d08b76d48a2",
+        "signature": "bbb6e898858a54d38164e71449ecccb124af2d7777db17c3368f8a737a85ff0b",
+        "affectsGlobalScope": false
+      },
+      "../src/settings/discord.ts": {
+        "version": "ed2ef59837b0be9cca3cce5f1441fe054f0043d5acbe5bdda29e603f4db4e8f0",
+        "signature": "779bc0390b200a2a17fce11b10ffa4aed8e4ed9bf2891ab122db09490cf6ab54",
+        "affectsGlobalScope": false
+      },
+      "../src/settings/index.ts": {
+        "version": "fcbbdd8a490f3b793b91f98d76f95a644803c798e4662a990874e0203434583c",
+        "signature": "fcbbdd8a490f3b793b91f98d76f95a644803c798e4662a990874e0203434583c",
+        "affectsGlobalScope": false
+      },
       "../src/index.ts": {
-        "version": "22d82dfb6aaec0b80cdeee14409e51a706136ddd370e1081e316c240edfad654",
-        "signature": "22d82dfb6aaec0b80cdeee14409e51a706136ddd370e1081e316c240edfad654",
+        "version": "ba875fb056b6e074a5e6f034c0bd9329bb0197e6668f7af1460306d1be5277f9",
+        "signature": "ba875fb056b6e074a5e6f034c0bd9329bb0197e6668f7af1460306d1be5277f9",
         "affectsGlobalScope": false
       },
       "../src/jest-setup.ts": {
@@ -8789,6 +8804,7 @@
         "../src/operators.ts",
         "../src/pipes/index.ts",
         "../src/services/index.ts",
+        "../src/settings/index.ts",
         "../src/transformers/index.ts",
         "../src/types.ts",
         "../src/utils/index.ts"
@@ -8857,6 +8873,16 @@
       "../src/services/index.ts": [
         "../src/services/cache.service.ts",
         "../src/services/discord.service.ts"
+      ],
+      "../src/settings/cache.ts": [
+        "../node_modules/class-validator/types/index.d.ts"
+      ],
+      "../src/settings/discord.ts": [
+        "../node_modules/class-validator/types/index.d.ts"
+      ],
+      "../src/settings/index.ts": [
+        "../src/settings/cache.ts",
+        "../src/settings/discord.ts"
       ],
       "../src/transformers/date-time.transformer.spec.ts": [
         "../node_modules/@types/luxon/index.d.ts",
@@ -15130,6 +15156,7 @@
         "../src/operators.ts",
         "../src/pipes/index.ts",
         "../src/services/index.ts",
+        "../src/settings/index.ts",
         "../src/transformers/index.ts",
         "../src/types.ts",
         "../src/utils/index.ts"
@@ -15158,6 +15185,10 @@
       "../src/services/index.ts": [
         "../src/services/cache.service.ts",
         "../src/services/discord.service.ts"
+      ],
+      "../src/settings/index.ts": [
+        "../src/settings/cache.ts",
+        "../src/settings/discord.ts"
       ],
       "../src/transformers/date-time.transformer.ts": [
         "../node_modules/@types/luxon/index.d.ts",
@@ -16161,6 +16192,9 @@
       "../src/services/discord.service.spec.ts",
       "../src/services/discord.service.ts",
       "../src/services/index.ts",
+      "../src/settings/cache.ts",
+      "../src/settings/discord.ts",
+      "../src/settings/index.ts",
       "../src/transformers/date-time.transformer.spec.ts",
       "../src/transformers/date-time.transformer.ts",
       "../src/transformers/date.transformer.spec.ts",

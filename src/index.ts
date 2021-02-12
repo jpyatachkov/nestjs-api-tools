@@ -6,6 +6,7 @@ export * from './interfaces';
 export * from './operators';
 export * from './pipes';
 export * from './services';
+export * from './settings';
 export * from './types';
 export * from './transformers';
 export * from './utils';
