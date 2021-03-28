@@ -1,6 +1,7 @@
 import {CanActivate, ExecutionContext, Inject, Injectable, Logger} from '@nestjs/common';
+import {IP_ALLOWLIST, IP_ALLOWLIST_GUARD_OPTIONS} from '../constants';
 
-import {IP_ALLOWLIST_GUARD_OPTIONS} from '../constants';
+import {Reflector} from '@nestjs/core';
 import {Request} from 'express';
 import ipRangeCheck from 'ip-range-check';
 
@@ -17,6 +18,7 @@ export class IpAllowlistGuard implements CanActivate {
   public constructor(
     @Inject(IP_ALLOWLIST_GUARD_OPTIONS)
     private readonly options: IpAllowlistGuardOptions,
+    private readonly reflector: Reflector,
   ) {
   }
 
@@ -30,7 +32,9 @@ export class IpAllowlistGuard implements CanActivate {
 
     this.logger.error(`IP ${ip} TRIES TO ACCESS ${req.path}`);
 
-    if (this.options.allowedIps?.length && ipRangeCheck(ip, this.options.allowedIps)) {
+    const allowedIps = this.getAllowedIps(context);
+
+    if (allowedIps?.length && ipRangeCheck(ip, allowedIps)) {
       this.logger.error(`IP ${ip} ACCESS TO ${req.path} ALLOWED`);
       return true;
     } else {
@@ -38,5 +42,13 @@ export class IpAllowlistGuard implements CanActivate {
     }
 
     return false;
+  }
+
+  private getAllowedIps(context: ExecutionContext): string[] {
+    const allowedIpsFromMeta = [
+      ...(this.reflector.get(IP_ALLOWLIST, context.getClass()) ?? []),
+      ...(this.reflector.get(IP_ALLOWLIST, context.getHandler()) ?? []),
+    ];
+    return allowedIpsFromMeta.length ? allowedIpsFromMeta : this.options.allowedIps;
   }
 }

@@ -3,12 +3,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const testing_1 = require("@nestjs/testing");
 const constants_1 = require("../constants");
+const testing_1 = require("@nestjs/testing");
 const ip_allowlist_guard_1 = require("./ip-allowlist.guard");
+const core_1 = require("@nestjs/core");
 const faker_1 = __importDefault(require("faker"));
 describe('IpAllowlistGuard', () => {
     let guard;
+    let reflector;
     beforeEach(async () => {
         const module = await testing_1.Test.createTestingModule({
             providers: [
@@ -20,9 +22,16 @@ describe('IpAllowlistGuard', () => {
                         allowedIps: [],
                     },
                 },
+                {
+                    provide: core_1.Reflector,
+                    useValue: {
+                        get: jest.fn(),
+                    },
+                },
             ],
         }).compile();
         guard = module.get(ip_allowlist_guard_1.IpAllowlistGuard);
+        reflector = module.get(core_1.Reflector);
     });
     it('should be defined', () => {
         expect(guard).toBeDefined();
@@ -50,32 +59,92 @@ describe('IpAllowlistGuard', () => {
         it('should return false on empty allowlist', () => {
             guard.options = {
                 debug: false,
-                allowedIps: [],
             };
+            const getAllowedIpsSpy = jest
+                .spyOn(guard, 'getAllowedIps')
+                .mockReturnValue([]);
             expect(guard.canActivate(context)).toBeFalsy();
+            expect(getAllowedIpsSpy).toBeCalledWith(context);
         });
         it('should return false if IP is not in allowlist', () => {
             request.ip = '167.19.78.14';
             guard.options = {
                 debug: false,
-                allowedIps: ['127.0.0.1', '197.0.10.15'],
             };
+            const getAllowedIpsSpy = jest
+                .spyOn(guard, 'getAllowedIps')
+                .mockReturnValue(['127.0.0.1', '197.0.10.15']);
             expect(guard.canActivate(context)).toBeFalsy();
+            expect(getAllowedIpsSpy).toBeCalledWith(context);
         });
         it('should return true if IP in allowlist', () => {
             guard.options = {
                 debug: false,
-                allowedIps: ['127.0.0.1', '197.0.10.15', request.ip],
             };
+            const getAllowedIpsSpy = jest
+                .spyOn(guard, 'getAllowedIps')
+                .mockReturnValue(['127.0.0.1', '197.0.10.15', request.ip]);
             expect(guard.canActivate(context)).toBeTruthy();
+            expect(getAllowedIpsSpy).toBeCalledWith(context);
         });
         it('should return true if IP in one of allowlist ranges', () => {
             request.ip = '178.176.72.59';
             guard.options = {
                 debug: false,
-                allowedIps: ['127.0.0.1', '197.0.10.15', '178.176.72.0/24'],
             };
+            const getAllowedIpsSpy = jest
+                .spyOn(guard, 'getAllowedIps')
+                .mockReturnValue(['127.0.0.1', '197.0.10.15', '178.176.72.0/24']);
             expect(guard.canActivate(context)).toBeTruthy();
+            expect(getAllowedIpsSpy).toBeCalledWith(context);
+        });
+    });
+    describe('getAllowedIps', () => {
+        let context;
+        beforeEach(() => {
+            context = {
+                getClass: jest.fn(),
+                getHandler: jest.fn(),
+            };
+        });
+        it('should return ips from meta without ips from settings if meta provided', () => {
+            const ips = [
+                faker_1.default.internet.ip(),
+                faker_1.default.internet.ip(),
+            ];
+            guard.options = {
+                debug: false,
+                allowedIps: ['127.0.0.1'],
+            };
+            const getSpy = jest
+                .spyOn(reflector, 'get')
+                .mockReturnValue(ips);
+            expect(guard.getAllowedIps(context)).toEqual([...ips, ...ips]);
+            expect(context.getClass).toBeCalledTimes(1);
+            expect(context.getHandler).toBeCalledTimes(1);
+            expect(getSpy).toBeCalledTimes(2);
+            expect(getSpy).toBeCalledWith(constants_1.IP_ALLOWLIST, undefined);
+            expect(getSpy).toBeCalledWith(constants_1.IP_ALLOWLIST, undefined);
+        });
+        describe.each([
+            [[]],
+            [undefined],
+        ])('ips: %o', (ips) => {
+            it('should return ips from settings if no meta provided', () => {
+                guard.options = {
+                    debug: false,
+                    allowedIps: ['127.0.0.1'],
+                };
+                const getSpy = jest
+                    .spyOn(reflector, 'get')
+                    .mockReturnValue(ips);
+                expect(guard.getAllowedIps(context)).toEqual(['127.0.0.1']);
+                expect(context.getClass).toBeCalledTimes(1);
+                expect(context.getHandler).toBeCalledTimes(1);
+                expect(getSpy).toBeCalledTimes(2);
+                expect(getSpy).toBeCalledWith(constants_1.IP_ALLOWLIST, undefined);
+                expect(getSpy).toBeCalledWith(constants_1.IP_ALLOWLIST, undefined);
+            });
         });
     });
 });

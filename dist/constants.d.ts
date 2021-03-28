@@ -6,3 +6,4 @@ export declare const LIMIT_PARAM = "limit";
 export declare const OFFSET_PARAM = "offset";
 export declare const PAGE_PARAM = "page";
 export declare const SIZE_PARAM = "size";
+export declare const IP_ALLOWLIST = "ip-allowlist";

@@ -7,3 +7,5 @@ export const LIMIT_PARAM = 'limit';
 export const OFFSET_PARAM = 'offset';
 export const PAGE_PARAM = 'page';
 export const SIZE_PARAM = 'size';
+
+export const IP_ALLOWLIST = 'ip-allowlist';
