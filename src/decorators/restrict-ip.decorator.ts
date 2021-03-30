@@ -1,7 +1,7 @@
 import {UseGuards, applyDecorators} from '@nestjs/common';
 
-import {ApplyDecoratorsType} from 'src';
-import {IpAllowlistGuard} from 'src/guards';
+import {ApplyDecoratorsType} from '../types';
+import {IpAllowlistGuard} from '../guards';
 
 /**
  * Uses IpAllowlistGuard to enable requests only from allowed IPs.

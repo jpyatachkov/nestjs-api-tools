@@ -1,6 +1,6 @@
 import {CustomDecorator, SetMetadata} from '@nestjs/common';
 
-import {IP_ALLOWLIST} from 'src/constants';
+import {IP_ALLOWLIST} from '../constants';
 
 /**
  * Decorator to override default ip address allowlist.

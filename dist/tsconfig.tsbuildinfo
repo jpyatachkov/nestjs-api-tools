@@ -1457,7 +1457,7 @@
         "affectsGlobalScope": false
       },
       "../src/decorators/ip-allowlist.decorator.ts": {
-        "version": "385c90187aea7cf8cd05a9ab6ec2a591d15e674dd952533f936ebb6285a7cb60",
+        "version": "45cbd7c5bdd6464716b698fbb70e7c6d7ec11761cc937f1529c00f1527df38dd",
         "signature": "6b33cd2eb3e73782bb62f0cccc000b7d161d3e83cb93868dc1787c2492c8ea36",
         "affectsGlobalScope": false
       },
@@ -2866,6 +2866,11 @@
         "signature": "33cdbeb262d3908dea3805a362f1e5dfa05b48175b68fb5e6c5841a13f95862c",
         "affectsGlobalScope": false
       },
+      "../src/types.ts": {
+        "version": "6dddb66838a11ed198ac51bb3a8dc0a0a655a98fac3a2718014b7a8b937dbe8c",
+        "signature": "0b046c2a87429cee1b383509f73b996a06d948ac8ebad5dc1e9eaf73b5559f3c",
+        "affectsGlobalScope": false
+      },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
         "version": "748dc5e30576ac07af1121893bb1beaafb0d7d0000142b69fae2b2995fc7f7f4",
         "signature": "748dc5e30576ac07af1121893bb1beaafb0d7d0000142b69fae2b2995fc7f7f4",
@@ -3337,8 +3342,8 @@
         "affectsGlobalScope": false
       },
       "../src/decorators/restrict-ip.decorator.ts": {
-        "version": "f98a83ab4481e5378e6b09aa39f8715d8d1b275e68b7a86af0639b1c1919914d",
-        "signature": "0328b33bb4fe8231bc38597db97fb5ce987baed540eacf81c2c110eaab614803",
+        "version": "acb36cef807778412435c66c3cbf361eb34a39c4f5bf0e7626e9105ada6bbd18",
+        "signature": "3405090d486c355573cc0b8068fa91eaea0cdd242e290f51faeef5f8acf1b1b9",
         "affectsGlobalScope": false
       },
       "../src/decorators/serialization.decorator.ts": {
@@ -3384,11 +3389,6 @@
       "../node_modules/class-transformer/index.d.ts": {
         "version": "ea4f5e760ac2f6dd1fb06785f38d42b6dde82b29d8a1be10a7540dc598a5e4af",
         "signature": "ea4f5e760ac2f6dd1fb06785f38d42b6dde82b29d8a1be10a7540dc598a5e4af",
-        "affectsGlobalScope": false
-      },
-      "../src/types.ts": {
-        "version": "6dddb66838a11ed198ac51bb3a8dc0a0a655a98fac3a2718014b7a8b937dbe8c",
-        "signature": "0b046c2a87429cee1b383509f73b996a06d948ac8ebad5dc1e9eaf73b5559f3c",
         "affectsGlobalScope": false
       },
       "../src/decorators/transform/as-date.decorator.ts": {
@@ -8709,7 +8709,7 @@
       "../src/decorators/restrict-ip.decorator.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/guards/index.ts",
-        "../src/index.ts"
+        "../src/types.ts"
       ],
       "../src/decorators/serialization.decorator.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
@@ -15106,7 +15106,7 @@
         "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/decorators/restrict-ip.decorator.ts": [
-        "../src/index.ts"
+        "../src/types.ts"
       ],
       "../src/decorators/size.decorator.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
