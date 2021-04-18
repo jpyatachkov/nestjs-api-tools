@@ -1,6 +1,6 @@
 {
   "name": "nestjs-api-tools",
-  "version": "0.12.1",
+  "version": "0.12.2",
   "description": "Wrappers for convenient API development including validation, logging and i18n wrappers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
     "@nestjs/core": "^7.6.1",
     "@nestjs/swagger": "^4.7.7",
     "@nestjs/typeorm": "^7.1.5",
-    "class-transformer": "^0.3.1",
+    "class-transformer": "^0.4.0",
     "class-validator": "^0.12.2",
     "discord.js": "^12.5.1",
     "ip-range-check": "^0.2.0",
