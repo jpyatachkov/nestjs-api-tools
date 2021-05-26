@@ -4611,9 +4611,14 @@
         "signature": "85e0a993fd80f7a3b2da3ff0306c5946daeab2a53e216f74514f198b52bbf0d0",
         "affectsGlobalScope": false
       },
+      "../src/decorators/validation/query-with-validation.decorator.ts": {
+        "version": "4c47e48e81a480bfe8faa8ed40f48630d5b05e827b4c18391d2a0ba1344da20b",
+        "signature": "92448a48487f9ae31d5c62b566dd8030787ae57dea9c85ef63fc6d900954856d",
+        "affectsGlobalScope": false
+      },
       "../src/decorators/validation/index.ts": {
-        "version": "9d7e927b6d1ee70a0b17334150324e2a16f0e8c4a7b8fb909fdf76a68470d245",
-        "signature": "9d7e927b6d1ee70a0b17334150324e2a16f0e8c4a7b8fb909fdf76a68470d245",
+        "version": "e878479cddce4dec4f96b14f8e41b6c992b9ee6e73c3542abbe1e6328ed8b7fe",
+        "signature": "e878479cddce4dec4f96b14f8e41b6c992b9ee6e73c3542abbe1e6328ed8b7fe",
         "affectsGlobalScope": false
       },
       "../src/decorators/index.ts": {
@@ -9567,10 +9572,14 @@
       "../src/decorators/validation/index.ts": [
         "../src/decorators/validation/body-with-trim.decorator.ts",
         "../src/decorators/validation/body-with-validation.decorator.ts",
-        "../src/decorators/validation/is-not-null.decorator.ts"
+        "../src/decorators/validation/is-not-null.decorator.ts",
+        "../src/decorators/validation/query-with-validation.decorator.ts"
       ],
       "../src/decorators/validation/is-not-null.decorator.ts": [
         "../node_modules/class-validator/types/index.d.ts"
+      ],
+      "../src/decorators/validation/query-with-validation.decorator.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/errors/api-bad-request-error.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -13747,7 +13756,8 @@
       "../src/decorators/validation/index.ts": [
         "../src/decorators/validation/body-with-trim.decorator.ts",
         "../src/decorators/validation/body-with-validation.decorator.ts",
-        "../src/decorators/validation/is-not-null.decorator.ts"
+        "../src/decorators/validation/is-not-null.decorator.ts",
+        "../src/decorators/validation/query-with-validation.decorator.ts"
       ],
       "../src/decorators/validation/is-not-null.decorator.ts": [
         "../node_modules/class-validator/types/index.d.ts"
@@ -14916,6 +14926,7 @@
       "../src/decorators/validation/body-with-validation.decorator.ts",
       "../src/decorators/validation/index.ts",
       "../src/decorators/validation/is-not-null.decorator.ts",
+      "../src/decorators/validation/query-with-validation.decorator.ts",
       "../src/errors/api-bad-request-error.ts",
       "../src/errors/api-conflict-error.ts",
       "../src/errors/api-forbidden-error.ts",

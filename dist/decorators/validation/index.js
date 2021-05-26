@@ -13,4 +13,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./body-with-trim.decorator"), exports);
 __exportStar(require("./body-with-validation.decorator"), exports);
 __exportStar(require("./is-not-null.decorator"), exports);
+__exportStar(require("./query-with-validation.decorator"), exports);
 //# sourceMappingURL=index.js.map
