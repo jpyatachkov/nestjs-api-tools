@@ -1,4 +1,4 @@
-import {createJsonReplacer, replacer} from './replacer';
+import {createJsonReplacer, replaceRussianLettersForSearch, replacer} from './replacer';
 
 describe('replacer', () => {
   describe('createJsonReplacer', () => {
@@ -36,5 +36,29 @@ describe('replacer', () => {
         });
       },
     );
+  });
+
+  describe('replaceRussianLettersForSearch', () => {
+    describe.each([
+      [null],
+      [undefined],
+      [[]],
+      [''],
+    ])('search: %o', (search: unknown) => {
+      it('should leave search unchanged if its is not string', () => {
+        expect(replaceRussianLettersForSearch(search as any)).toEqual(search);
+      });
+    });
+
+    describe.each([
+      ['sfg', 'sfg'],
+      ['мама мыла раму', 'мама мыла раму'],
+      ['Королёк - птица певчая', 'Королек - птица певчая'],
+      ['еееёёёёёее', 'ееееееееее'],
+    ])('search: %o, expected: %o', (search: string, expected: string) => {
+      it('should replace е to ё', () => {
+        expect(replaceRussianLettersForSearch(search)).toEqual(expected);
+      });
+    });
   });
 });

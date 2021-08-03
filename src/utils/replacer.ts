@@ -1,3 +1,5 @@
+import {isString} from 'lodash';
+
 /**
  * Creates replacer function for JSON.stringify.
  * @param fieldNamesToExclude
@@ -18,4 +20,16 @@ export function replacer(obj: Record<string, any>, keysToExclude: string[]): Rec
     }
   });
   return obj;
+}
+
+/**
+ * Replaces Russian letters for more convenient search
+ * @param search
+ */
+export function replaceRussianLettersForSearch(search: string): string {
+  if (isString(search) && search.length) {
+    return search.replace(/ё/g, 'е');
+  }
+
+  return search;
 }
