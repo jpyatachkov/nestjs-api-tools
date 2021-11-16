@@ -14,11 +14,11 @@ const class_validator_1 = require("class-validator");
 class Cache {
 }
 __decorate([
-    class_validator_1.IsInt(),
+    (0, class_validator_1.IsInt)(),
     __metadata("design:type", Number)
 ], Cache.prototype, "ttl", void 0);
 __decorate([
-    class_validator_1.IsBoolean(),
+    (0, class_validator_1.IsBoolean)(),
     __metadata("design:type", Boolean)
 ], Cache.prototype, "useClones", void 0);
 exports.Cache = Cache;

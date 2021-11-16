@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateEntityWithOptimisticLock = exports.createOrUpdateEntityWithOptimisticLock = exports.throwExceptionIfEntityNotFound = exports.mapResponseData = void 0;
 const operators_1 = require("rxjs/operators");
-exports.mapResponseData = operators_1.map((response) => response.data);
+exports.mapResponseData = (0, operators_1.map)((response) => response.data);
 function throwExceptionIfEntityNotFound(entity, exception) {
     if (!entity) {
         throw exception;

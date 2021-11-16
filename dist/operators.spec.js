@@ -7,7 +7,7 @@ const operators_1 = require("./operators");
 const faker_1 = __importDefault(require("faker"));
 const rxjs_1 = require("rxjs");
 jest.mock('class-transformer', () => ({
-    ...(jest.requireActual('class-transformer')),
+    ...jest.requireActual('class-transformer'),
     classToPlain: jest.fn(),
 }));
 describe('operators', () => {
@@ -16,7 +16,7 @@ describe('operators', () => {
             const response = {
                 data: faker_1.default.helpers.createCard(),
             };
-            rxjs_1.of(response)
+            (0, rxjs_1.of)(response)
                 .pipe(operators_1.mapResponseData)
                 .subscribe((data) => {
                 expect(data).toEqual(response.data);
@@ -27,7 +27,7 @@ describe('operators', () => {
     describe('throwExceptionIfEntityNotFound', () => {
         it('должен кидать исключение, если переданный параметр - null', () => {
             try {
-                operators_1.throwExceptionIfEntityNotFound(null, new Error());
+                (0, operators_1.throwExceptionIfEntityNotFound)(null, new Error());
             }
             catch (e) {
                 expect(e).toBeInstanceOf(Error);
@@ -35,7 +35,7 @@ describe('operators', () => {
             expect.hasAssertions();
         });
         it('должен возвращать переданный параметр', () => {
-            expect(operators_1.throwExceptionIfEntityNotFound({}, new Error())).toEqual({});
+            expect((0, operators_1.throwExceptionIfEntityNotFound)({}, new Error())).toEqual({});
         });
     });
     describe('createOrUpdateEntityWithOptimisticLock', () => {
@@ -56,7 +56,7 @@ describe('operators', () => {
             const updateSpy = jest
                 .spyOn(repository, 'update')
                 .mockImplementation(async () => ({ affected: 1 }));
-            await operators_1.createOrUpdateEntityWithOptimisticLock(repository, null, {}, 1, emptyEntity, new Error());
+            await (0, operators_1.createOrUpdateEntityWithOptimisticLock)(repository, null, {}, 1, emptyEntity, new Error());
             expect(saveSpy).toBeCalledWith({
                 ...emptyEntity,
                 version: 1,
@@ -70,7 +70,7 @@ describe('operators', () => {
             jest
                 .spyOn(repository, 'update')
                 .mockImplementation(async () => ({ affected: 1 }));
-            await operators_1.createOrUpdateEntityWithOptimisticLock(repository, entity, {}, 1, {}, new Error());
+            await (0, operators_1.createOrUpdateEntityWithOptimisticLock)(repository, entity, {}, 1, {}, new Error());
             expect(saveSpy).not.toBeCalled();
         });
     });
@@ -79,7 +79,7 @@ describe('operators', () => {
         let repository;
         beforeEach(() => {
             entity = {
-                id: faker_1.default.random.number(),
+                id: faker_1.default.datatype.number(),
             };
             repository = {
                 update: jest.fn(),
@@ -89,7 +89,7 @@ describe('operators', () => {
             const updateSpy = jest
                 .spyOn(repository, 'update')
                 .mockImplementation(async () => ({ affected: 1 }));
-            await operators_1.updateEntityWithOptimisticLock(repository, entity, null, 1, new Error());
+            await (0, operators_1.updateEntityWithOptimisticLock)(repository, entity, null, 1, new Error());
             expect(updateSpy).not.toBeCalled();
         });
         it('должен кидать исключение, если сущность с такой версией уже нет', async () => {
@@ -97,7 +97,7 @@ describe('operators', () => {
                 .spyOn(repository, 'update')
                 .mockImplementation(async () => ({ affected: 0 }));
             try {
-                await operators_1.updateEntityWithOptimisticLock(repository, entity, {}, 1, new Error());
+                await (0, operators_1.updateEntityWithOptimisticLock)(repository, entity, {}, 1, new Error());
             }
             catch (e) {
                 expect(e).toBeInstanceOf(Error);
@@ -106,13 +106,13 @@ describe('operators', () => {
         });
         it('должен обновлять сущность и уведичивать ее версию', async () => {
             const data = {
-                [faker_1.default.lorem.word()]: faker_1.default.random.number(),
+                [faker_1.default.lorem.word()]: faker_1.default.datatype.number(),
             };
-            const version = faker_1.default.random.number();
+            const version = faker_1.default.datatype.number();
             const updateSpy = jest
                 .spyOn(repository, 'update')
                 .mockImplementation(async () => ({ affected: 1 }));
-            await operators_1.updateEntityWithOptimisticLock(repository, entity, data, version, new Error());
+            await (0, operators_1.updateEntityWithOptimisticLock)(repository, entity, data, version, new Error());
             expect(updateSpy).toBeCalledWith({
                 id: entity.id,
                 version,

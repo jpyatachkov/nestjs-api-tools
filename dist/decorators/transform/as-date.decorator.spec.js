@@ -14,7 +14,7 @@ describe('AsDate', () => {
         { value: null },
     ])('v: %s', (v) => {
         it('should return null if object cannot be transformed to ISO-string', () => {
-            expect(as_date_decorator_1.transformAsDate(v)).toBeNull();
+            expect((0, as_date_decorator_1.transformAsDate)(v)).toBeNull();
         });
     });
     describe.each([
@@ -32,7 +32,7 @@ describe('AsDate', () => {
         },
     ])('v: %s', (v) => {
         it('should return ISO-string', () => {
-            expect(as_date_decorator_1.transformAsDate(v)).toMatch(/^\d{4}-[01]\d-[0-3]\d$/);
+            expect((0, as_date_decorator_1.transformAsDate)(v)).toMatch(/^\d{4}-[01]\d-[0-3]\d$/);
         });
     });
 });

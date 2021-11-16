@@ -5,7 +5,7 @@ const luxon_1 = require("luxon");
 const utils_1 = require("../utils");
 class DateTransformer {
     from(value) {
-        return utils_1.parseDateTime(value);
+        return (0, utils_1.parseDateTime)(value);
     }
     to(value) {
         if (!value || value.toString().match(/^\d{4}-\d{2}-\d{2}$/)) {

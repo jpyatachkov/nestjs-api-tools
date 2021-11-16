@@ -37,7 +37,7 @@ let TrimPipe = TrimPipe_1 = class TrimPipe {
 };
 TrimPipe.MAX_DEPTH = 10;
 TrimPipe = TrimPipe_1 = __decorate([
-    common_1.Injectable()
+    (0, common_1.Injectable)()
 ], TrimPipe);
 exports.TrimPipe = TrimPipe;
 //# sourceMappingURL=trim.pipe.js.map

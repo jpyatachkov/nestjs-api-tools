@@ -34,7 +34,7 @@ describe('CacheService', () => {
         service.cache = cache;
         key = faker_1.default.random.word();
         value = faker_1.default.random.word();
-        ttl = faker_1.default.random.number();
+        ttl = faker_1.default.datatype.number();
     });
     it('should be defined', () => {
         expect(service).toBeDefined();

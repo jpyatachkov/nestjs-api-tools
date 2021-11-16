@@ -42,7 +42,7 @@ describe('DiscordService', () => {
                 send: jest.fn(),
             };
             expect(await service.emitError(faker_1.default.random.word(), faker_1.default.random.word())).not.toBeNull();
-            expect(service.hook.send).toBeCalledWith(expect.any(discord_js_1.MessageEmbed));
+            expect(service.hook.send).toBeCalledWith({ embeds: [expect.any(discord_js_1.MessageEmbed)] });
         });
     });
 });

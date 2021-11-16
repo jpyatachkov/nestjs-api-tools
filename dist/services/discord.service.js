@@ -20,7 +20,10 @@ let DiscordService = class DiscordService {
     constructor(options) {
         this.options = options;
         if ((options === null || options === void 0 ? void 0 : options.id) && (options === null || options === void 0 ? void 0 : options.token)) {
-            this.hook = new discord_js_1.WebhookClient(options.id, options.token);
+            this.hook = new discord_js_1.WebhookClient({
+                id: options.id,
+                token: options.token,
+            });
         }
     }
     async emitError(alias, logToken, httpMethod = null, httpPath = null, context = {}) {
@@ -39,12 +42,12 @@ let DiscordService = class DiscordService {
                 ? `text: \`${value.discordNotifyText}\``
                 : `id: \`${value.id}\` guid: \`${value.guid}\``);
         }
-        return this.hook.send(errorMessage);
+        await this.hook.send({ embeds: [errorMessage] });
     }
 };
 DiscordService = __decorate([
-    common_1.Injectable(),
-    __param(0, common_1.Inject(constants_1.DISCORD_SERVICE_OPTIONS)),
+    (0, common_1.Injectable)(),
+    __param(0, (0, common_1.Inject)(constants_1.DISCORD_SERVICE_OPTIONS)),
     __metadata("design:paramtypes", [Object])
 ], DiscordService);
 exports.DiscordService = DiscordService;

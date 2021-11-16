@@ -10,7 +10,7 @@ import faker from 'faker';
 import {of} from 'rxjs';
 
 jest.mock('class-transformer', () => ({
-  ...(jest.requireActual('class-transformer')),
+  ...(jest.requireActual('class-transformer') as any),
   classToPlain: jest.fn(),
 }));
 
@@ -113,7 +113,7 @@ describe('operators', () => {
 
     beforeEach(() => {
       entity = {
-        id: faker.random.number(),
+        id: faker.datatype.number(),
       };
 
       repository = {
@@ -159,9 +159,9 @@ describe('operators', () => {
 
     it('должен обновлять сущность и уведичивать ее версию', async () => {
       const data = {
-        [faker.lorem.word()]: faker.random.number(),
+        [faker.lorem.word()]: faker.datatype.number(),
       };
-      const version = faker.random.number();
+      const version = faker.datatype.number();
 
       const updateSpy = jest
         .spyOn(repository, 'update')

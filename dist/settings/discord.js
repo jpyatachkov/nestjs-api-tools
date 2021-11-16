@@ -14,13 +14,13 @@ const class_validator_1 = require("class-validator");
 class Discord {
 }
 __decorate([
-    class_validator_1.IsOptional(),
-    class_validator_1.IsString(),
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], Discord.prototype, "id", void 0);
 __decorate([
-    class_validator_1.IsOptional(),
-    class_validator_1.IsString(),
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], Discord.prototype, "token", void 0);
 exports.Discord = Discord;

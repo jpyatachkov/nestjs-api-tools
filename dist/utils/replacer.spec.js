@@ -6,7 +6,7 @@ describe('replacer', () => {
         it('should create replacer function', () => {
             const object = { a: 1, b: 2, c: 3 };
             const fieldsToExclude = ['a', 'e'];
-            const replacerFunction = replacer_1.createJsonReplacer(fieldsToExclude);
+            const replacerFunction = (0, replacer_1.createJsonReplacer)(fieldsToExclude);
             Object
                 .entries(object)
                 .forEach(([k, v]) => {
@@ -27,7 +27,7 @@ describe('replacer', () => {
             [{ name: 'Sergey', age: 20 }, ['test'], { name: 'Sergey', age: 20 }],
         ])('obj %o keysToExclude %s', (obj, keysToExclude, result) => {
             it('should return object without excluded fields', () => {
-                expect(replacer_1.replacer(obj, keysToExclude)).toEqual(result);
+                expect((0, replacer_1.replacer)(obj, keysToExclude)).toEqual(result);
             });
         });
     });

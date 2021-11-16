@@ -4,13 +4,14 @@ exports.SaveApiResponse = void 0;
 const swagger_1 = require("@nestjs/swagger");
 const common_1 = require("@nestjs/common");
 const interfaces_1 = require("../../interfaces");
-exports.SaveApiResponse = (options) => common_1.applyDecorators(common_1.HttpCode(options.status || common_1.HttpStatus.CREATED), swagger_1.ApiResponse({
+const SaveApiResponse = (options) => (0, common_1.applyDecorators)((0, common_1.HttpCode)(options.status || common_1.HttpStatus.CREATED), (0, swagger_1.ApiResponse)({
     status: options.status || common_1.HttpStatus.CREATED,
     description: options.description,
     type: options.type,
     isArray: options.isArray,
-}), swagger_1.ApiBadRequestResponse({
+}), (0, swagger_1.ApiBadRequestResponse)({
     description: options.errorDescription || 'Некорректное тело запроса',
     type: interfaces_1.ApiErrorResponse,
 }));
+exports.SaveApiResponse = SaveApiResponse;
 //# sourceMappingURL=save-api-response.decorator.js.map

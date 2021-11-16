@@ -43,8 +43,8 @@ let CacheService = class CacheService {
     }
 };
 CacheService = __decorate([
-    common_1.Injectable(),
-    __param(0, common_1.Inject(constants_1.CACHE_SERVICE_OPTIONS)),
+    (0, common_1.Injectable)(),
+    __param(0, (0, common_1.Inject)(constants_1.CACHE_SERVICE_OPTIONS)),
     __metadata("design:paramtypes", [Object])
 ], CacheService);
 exports.CacheService = CacheService;

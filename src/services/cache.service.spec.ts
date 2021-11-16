@@ -38,7 +38,7 @@ describe('CacheService', () => {
 
     key = faker.random.word();
     value = faker.random.word();
-    ttl = faker.random.number();
+    ttl = faker.datatype.number();
   });
 
   it('should be defined', () => {

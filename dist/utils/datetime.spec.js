@@ -13,7 +13,7 @@ describe('datetime', () => {
             '2020-12-03 21 : 05',
         ])('v = %o', (v) => {
             it('shouls return null if input cannot be parsed as luxon.DateTime', () => {
-                expect(datetime_1.parseDateTime(v)).toBeNull();
+                expect((0, datetime_1.parseDateTime)(v)).toBeNull();
             });
         });
         describe.each([
@@ -27,7 +27,7 @@ describe('datetime', () => {
             luxon_1.DateTime.local(),
         ])('v = %o', (v) => {
             it('should return DateTime if input can be parsed as luxon.DateTime', () => {
-                const dt = datetime_1.parseDateTime(v);
+                const dt = (0, datetime_1.parseDateTime)(v);
                 expect(dt).toBeInstanceOf(luxon_1.DateTime);
                 expect(dt.isValid).toBeTruthy();
             });

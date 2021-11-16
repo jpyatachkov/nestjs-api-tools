@@ -35,7 +35,7 @@ let IpAllowlistGuard = IpAllowlistGuard_1 = class IpAllowlistGuard {
         const ip = req.ip;
         this.logger.error(`IP ${ip} TRIES TO ACCESS ${req.path}`);
         const allowedIps = this.getAllowedIps(context);
-        if ((allowedIps === null || allowedIps === void 0 ? void 0 : allowedIps.length) && ip_range_check_1.default(ip, allowedIps)) {
+        if ((allowedIps === null || allowedIps === void 0 ? void 0 : allowedIps.length) && (0, ip_range_check_1.default)(ip, allowedIps)) {
             this.logger.error(`IP ${ip} ACCESS TO ${req.path} ALLOWED`);
             return true;
         }
@@ -54,8 +54,8 @@ let IpAllowlistGuard = IpAllowlistGuard_1 = class IpAllowlistGuard {
     }
 };
 IpAllowlistGuard = IpAllowlistGuard_1 = __decorate([
-    common_1.Injectable(),
-    __param(0, common_1.Inject(constants_1.IP_ALLOWLIST_GUARD_OPTIONS)),
+    (0, common_1.Injectable)(),
+    __param(0, (0, common_1.Inject)(constants_1.IP_ALLOWLIST_GUARD_OPTIONS)),
     __metadata("design:paramtypes", [Object, core_1.Reflector])
 ], IpAllowlistGuard);
 exports.IpAllowlistGuard = IpAllowlistGuard;

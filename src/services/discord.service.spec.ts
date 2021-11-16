@@ -56,7 +56,7 @@ describe('DiscordService', () => {
           faker.random.word(),
         ),
       ).not.toBeNull();
-      expect((service as any).hook.send).toBeCalledWith(expect.any(MessageEmbed));
+      expect((service as any).hook.send).toBeCalledWith({embeds: [expect.any(MessageEmbed)]});
     });
   });
 });

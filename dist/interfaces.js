@@ -14,21 +14,21 @@ const swagger_1 = require("@nestjs/swagger");
 class ApiErrorResponse {
 }
 __decorate([
-    swagger_1.ApiProperty({
+    (0, swagger_1.ApiProperty)({
         description: 'HTTP-код ошибки, например 400 или 500',
         example: 403,
     }),
     __metadata("design:type", Number)
 ], ApiErrorResponse.prototype, "statusCode", void 0);
 __decorate([
-    swagger_1.ApiProperty({
+    (0, swagger_1.ApiProperty)({
         description: 'Название ошибки - Bad Request, Internal Server Error',
         example: 'Forbidden',
     }),
     __metadata("design:type", String)
 ], ApiErrorResponse.prototype, "error", void 0);
 __decorate([
-    swagger_1.ApiProperty({
+    (0, swagger_1.ApiProperty)({
         description: 'Сообщение клиенту API',
         example: 'У Вас нет прав на выполнение этой операции',
     }),

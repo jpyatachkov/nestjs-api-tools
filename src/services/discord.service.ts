@@ -1,5 +1,5 @@
 import {Inject, Injectable} from '@nestjs/common';
-import {Message, MessageEmbed, WebhookClient} from 'discord.js';
+import {MessageEmbed, WebhookClient} from 'discord.js';
 
 import {DISCORD_SERVICE_OPTIONS} from '../constants';
 
@@ -28,10 +28,10 @@ export class DiscordService {
     private readonly options: DiscordServiceOptions,
   ) {
     if (options?.id && options?.token) {
-      this.hook = new WebhookClient(
-        options.id,
-        options.token,
-      );
+      this.hook = new WebhookClient({
+        id: options.id,
+        token: options.token,
+      });
     }
   }
 
@@ -41,7 +41,7 @@ export class DiscordService {
     httpMethod: string = null,
     httpPath: string = null,
     context: DiscordServiceContext = {},
-  ): Promise<Message | null> {
+  ): Promise<void> {
     if (!this.hook) {
       return null;
     }
@@ -64,6 +64,6 @@ export class DiscordService {
       );
     }
 
-    return this.hook.send(errorMessage);
+    await this.hook.send({embeds: [errorMessage]});
   }
 }

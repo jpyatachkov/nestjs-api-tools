@@ -10,7 +10,7 @@ describe('capitalize', () => {
         ['first second', 'First second'],
     ])('%s => %s', (str, expected) => {
         it('should capitalize first letter', () => {
-            expect(string_1.capitalize(str)).toEqual(expected);
+            expect((0, string_1.capitalize)(str)).toEqual(expected);
         });
     });
 });
@@ -26,7 +26,7 @@ describe('joinStrings', () => {
         ['/', ['/', '/a/', '/b/'], 'a/b'],
     ])('%s => %s', (delimiter, strings, expected) => {
         it('should join strings with delimiter', () => {
-            expect(string_1.joinStrings(delimiter, ...strings)).toEqual(expected);
+            expect((0, string_1.joinStrings)(delimiter, ...strings)).toEqual(expected);
         });
     });
 });
@@ -41,7 +41,7 @@ describe('isEmpty', () => {
         ['undefined', false],
     ])('%s => %s', (str, expected) => {
         it('should check whether string is empty or not defined', () => {
-            expect(string_1.isEmpty(str)).toEqual(expected);
+            expect((0, string_1.isEmpty)(str)).toEqual(expected);
         });
     });
 });

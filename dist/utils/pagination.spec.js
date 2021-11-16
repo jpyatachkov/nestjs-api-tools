@@ -12,7 +12,7 @@ describe('pageAndSizeToSkipAndTake', () => {
         [1, null, 0, null],
     ])('page %o, size %o, skip %o, take %o', (page, size, skip, take) => {
         it('should transform page and size to offset and limit', () => {
-            const [actualSkip, actualTake] = pagination_1.pageAndSizeToSkipAndTake(page, size, DEFAULT_SIZE);
+            const [actualSkip, actualTake] = (0, pagination_1.pageAndSizeToSkipAndTake)(page, size, DEFAULT_SIZE);
             expect(actualSkip).toEqual(skip);
             expect(actualTake).toEqual(take);
         });

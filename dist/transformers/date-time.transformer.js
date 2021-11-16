@@ -5,7 +5,7 @@ const luxon_1 = require("luxon");
 const utils_1 = require("../utils");
 class DateTimeTransformer {
     from(value) {
-        return utils_1.parseDateTime(value);
+        return (0, utils_1.parseDateTime)(value);
     }
     to(value) {
         const format = 'yyyy-MM-dd HH:mm:ssZ';

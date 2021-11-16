@@ -15,7 +15,7 @@ let ParseDatePipe = class ParseDatePipe {
     }
 };
 ParseDatePipe = __decorate([
-    common_1.Injectable()
+    (0, common_1.Injectable)()
 ], ParseDatePipe);
 exports.ParseDatePipe = ParseDatePipe;
 //# sourceMappingURL=parse-date.pipe.js.map
