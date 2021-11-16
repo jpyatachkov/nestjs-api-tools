@@ -39,7 +39,7 @@ describe('replacer', () => {
             [''],
         ])('search: %o', (search) => {
             it('should leave search unchanged if its is not string', () => {
-                expect(replacer_1.replaceRussianLettersForSearch(search)).toEqual(search);
+                expect((0, replacer_1.replaceRussianLettersForSearch)(search)).toEqual(search);
             });
         });
         describe.each([
@@ -49,7 +49,7 @@ describe('replacer', () => {
             ['еееёёёёёее', 'ееееееееее'],
         ])('search: %o, expected: %o', (search, expected) => {
             it('should replace е to ё', () => {
-                expect(replacer_1.replaceRussianLettersForSearch(search)).toEqual(expected);
+                expect((0, replacer_1.replaceRussianLettersForSearch)(search)).toEqual(expected);
             });
         });
     });

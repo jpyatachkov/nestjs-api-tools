@@ -20,10 +20,7 @@ let DiscordService = class DiscordService {
     constructor(options) {
         this.options = options;
         if ((options === null || options === void 0 ? void 0 : options.id) && (options === null || options === void 0 ? void 0 : options.token)) {
-            this.hook = new discord_js_1.WebhookClient({
-                id: options.id,
-                token: options.token,
-            });
+            this.hook = new discord_js_1.WebhookClient(options.id, options.token);
         }
     }
     async emitError(alias, logToken, httpMethod = null, httpPath = null, context = {}) {

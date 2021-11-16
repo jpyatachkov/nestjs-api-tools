@@ -16,7 +16,7 @@ function replacer(obj, keysToExclude) {
 }
 exports.replacer = replacer;
 function replaceRussianLettersForSearch(search) {
-    if (lodash_1.isString(search) && search.length) {
+    if ((0, lodash_1.isString)(search) && search.length) {
         return search.replace(/ё/g, 'е');
     }
     return search;

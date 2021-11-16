@@ -28,10 +28,10 @@ export class DiscordService {
     private readonly options: DiscordServiceOptions,
   ) {
     if (options?.id && options?.token) {
-      this.hook = new WebhookClient({
-        id: options.id,
-        token: options.token,
-      });
+      this.hook = new WebhookClient(
+        options.id,
+        options.token,
+      );
     }
   }
 
