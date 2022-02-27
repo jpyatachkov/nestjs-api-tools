@@ -9,3 +9,5 @@ export const PAGE_PARAM = 'page';
 export const SIZE_PARAM = 'size';
 
 export const IP_ALLOWLIST = 'ip-allowlist';
+
+export const POSTGRES_MAX_INT = 2_147_483_647;

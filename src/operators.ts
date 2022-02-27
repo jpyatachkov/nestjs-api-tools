@@ -84,7 +84,7 @@ export async function updateEntityWithOptimisticLock<T>(
     {
       ...data,
       version: version + 1,
-    },
+    } as any,
   );
 
   if (!affected) {

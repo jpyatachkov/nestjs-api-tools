@@ -7,3 +7,4 @@ export declare const OFFSET_PARAM = "offset";
 export declare const PAGE_PARAM = "page";
 export declare const SIZE_PARAM = "size";
 export declare const IP_ALLOWLIST = "ip-allowlist";
+export declare const POSTGRES_MAX_INT = 2147483647;

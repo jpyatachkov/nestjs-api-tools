@@ -19,6 +19,6 @@ export const Limit = createParamDecorator(
   }, ctx: ExecutionContextHost): number => {
     const request = ctx.switchToHttp().getRequest();
     const limit = parseInt(request.query[options.limitParam]) || options.defaultLimit;
-    return (limit > options.maxLimit) ? options.maxLimit : limit;
+    return limit > options.maxLimit ? options.maxLimit : limit;
   },
 );

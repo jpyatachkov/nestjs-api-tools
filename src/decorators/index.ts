@@ -1,4 +1,5 @@
 export * from './api';
+export * from './id-param.decorator';
 export * from './ip-allowlist.decorator';
 export * from './limit.decorator';
 export * from './offset.decorator';
@@ -9,3 +10,4 @@ export * from './serialization.decorator';
 export * from './size.decorator';
 export * from './transform';
 export * from './validation';
+export * from './uuid-param.decorator';

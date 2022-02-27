@@ -10,6 +10,6 @@ exports.Limit = (0, common_1.createParamDecorator)((options = {
 }, ctx) => {
     const request = ctx.switchToHttp().getRequest();
     const limit = parseInt(request.query[options.limitParam]) || options.defaultLimit;
-    return (limit > options.maxLimit) ? options.maxLimit : limit;
+    return limit > options.maxLimit ? options.maxLimit : limit;
 });
 //# sourceMappingURL=limit.decorator.js.map
